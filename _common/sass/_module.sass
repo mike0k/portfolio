@@ -1,0 +1,27 @@
+////////////////////////////////////////////////
+// ALERT
+////////////////////////////////////////////////
+
+.notifications
+  top: 10vh
+  right: 0
+  position: fixed
+  width: 15vw
+  min-width: 250px
+  z-index: 500
+
+  .alert
+    overflow: hidden
+    margin: 0 0 5px 0
+    opacity: 0.8
+    @include transition(all 1s ease)
+    cursor: pointer
+    button
+      display: none
+    &:hover, &:focus
+      opacity: 1
+
+
+////////////////////////////////////////////////
+// MISC
+////////////////////////////////////////////////

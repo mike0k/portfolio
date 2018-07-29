@@ -1,0 +1,29 @@
+{
+    "name": "animite/tm-woodworks",
+    "description": "Thomson Woodworks Website",
+    "homepage": "http://www.animitemedia.com/",
+    "type": "project",
+    "minimum-stability" : "stable",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Animite Media",
+            "email": "michael@animitemedia.com"
+        }
+    ],
+    "require": {
+        "php": "7.1.16",
+        "yiisoft/yii2": ">=2.0.15.1",
+        "yiisoft/yii2-bootstrap": ">=2.0",
+        "yiisoft/yii2-jui": ">=2.0",
+        "yiisoft/yii2-swiftmailer": ">=2.1",
+        "himiklab/yii2-recaptcha-widget": ">=1.2",
+        "pelago/emogrifier": ">=2.0",
+        "devgroup/yii2-http2-server-push": ">=1.0",
+        "himiklab/yii2-sitemap-module": ">=1.2"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": ">=2.0",
+        "yiisoft/yii2-gii": ">=2.0"
+    }
+}

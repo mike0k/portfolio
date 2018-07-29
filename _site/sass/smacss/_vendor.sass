@@ -1,0 +1,47 @@
+////////////////////////////////////////////////
+// CHROME
+////////////////////////////////////////////////
+
+@-webkit-keyframes autofill
+  to
+    color: #666
+    background: transparent
+input:-webkit-autofill
+  -webkit-animation-name: autofill
+  -webkit-animation-fill-mode: both
+  -webkit-text-fill-color: white !important
+
+
+////////////////////////////////////////////////
+// GEOCOMPLETE
+////////////////////////////////////////////////
+.pac-container
+  &:after
+    display: none !important
+  .pac-item
+    cursor: pointer
+    font-size: $fs-lg
+    line-height: $fs-xxl
+    padding: 5px 10px
+    &:hover, &:focus
+      background-color: rgba($cp-pri-li, 0.6)
+  .pac-icon
+    display: none
+
+////////////////////////////////////////////////
+// SELECT PICKER
+////////////////////////////////////////////////
+
+.bootstrap-select .btn
+  font-weight: $fw-md
+  text-transform: none
+  border-radius: 4px
+  padding: 6px 25px 6px 10px
+  font-size: $fs-lg
+  border-width: 1px
+  line-height: $fs-xxl
+
+.bootstrap-select>.dropdown-toggle.bs-placeholder:hover
+  color: $cp-blk-li
+.bootstrap-select>.dropdown-toggle.bs-placeholder:focus, .bootstrap-select.open>.dropdown-toggle.bs-placeholder
+  color: $cp-blk-md

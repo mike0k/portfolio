@@ -1,0 +1,153 @@
+////////////////////////////////////////////////
+// FORM
+////////////////////////////////////////////////
+
+.animate-label
+  .form-group
+    width: 100%
+    position: relative
+    margin-bottom: 40px
+    .form-control
+      height: auto
+      padding: 10px 0 5px 0
+      border: 0
+      border-radius: 0
+      border-bottom: 1px solid $cp-gry-li
+      color: $cp-blk-md
+      background: transparent
+      font-size: $fs-lg
+      font-weight: $fw-md
+      @include box-shadow(none)
+      &:focus
+        border-color: $cp-acc-md
+    textarea.form-control
+      height: 46px
+      min-height: 46px
+      max-height: 250px
+    .control-label
+      position: absolute
+      pointer-events: none
+      left: 0
+      top: -7px
+      font-size: $fs-sm
+      font-weight: $fw-md
+      color: $cp-gry-md
+      padding-left: 0
+      line-height: 1
+      @include transition(all 0.3s ease)
+    &.form-group-empty
+      .control-label
+        top: 10px
+        font-size: $fs-lg
+
+
+////////////////////////////////////////////////
+// ICON
+////////////////////////////////////////////////
+.icon-frame
+  background-color: transparent !important
+  border: none !important
+  text-align: center
+  margin: 0 auto
+  padding: 20px 0
+
+  span
+    display: inline-block
+    cursor: pointer
+    margin: 0 auto 15px auto
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    text-align: center
+    position: relative
+    z-index: 1
+    @include transition(background 0.2s, color 0.2s)
+    color: $cp-gry-md
+    background-color: rgba($cp-blk-md,0.02)
+    border: 1px solid rgba($cp-blk-md,0.05)
+
+    &:after
+      content: ''
+      pointer-events: none
+      position: absolute
+      top: -7px
+      left: -7px
+      width: 100%
+      height: 100%
+      border-radius: 50%
+      padding: 7px
+      opacity: 0
+      @include box-sizing(content-box)
+      @include transition(transform 0.2s, opacity 0.2s)
+      @include transform(scale(.8))
+      @include box-shadow(0 0 0 2px $cp-pri-dk)
+
+    &:before
+      line-height: 60px
+      font-style: normal
+      font-weight: normal
+      font-variant: normal
+      text-transform: none
+      display: block
+      -webkit-font-smoothing: antialiased
+      font-size: $fs-xxxl
+
+    &:hover, &:focus
+      background-color: $cp-gry-dk
+      color: $cp-wht-md
+
+      &:after
+        @include transform(scale(1))
+        opacity: 1
+
+////////////////////////////////////////////////
+// IMAGES
+////////////////////////////////////////////////
+.img-frame
+  background-color: $cp-wht-li
+  border: 1px solid $cp-acc-li
+  padding: 5px
+  img
+    border: 1px solid $cp-gry-li
+    width: 100%
+
+
+////////////////////////////////////////////////
+// STARS
+////////////////////////////////////////////////
+
+.stars
+  width: 100px
+  height: 20px
+  overflow: hidden
+  background-color: transparent
+  background-image: url("#{$im-dir}misc/stars.png")
+  background-repeat: no-repeat
+  background-size: cover
+  &.s1
+    background-position: 0 -112px
+  &.s2
+    background-position: 0 -84px
+  &.s3
+    background-position: 0 -56px
+  &.s4
+    background-position: 0 -28px
+  &.s5
+    background-position: 0 0
+
+////////////////////////////////////////////////
+// TABLE
+////////////////////////////////////////////////
+.table
+  td
+    padding: 5px 10px !important
+
+
+////////////////////////////////////////////////
+// MICS
+////////////////////////////////////////////////
+.bold
+  font-weight: $fw-dk
+
+.sep
+  border-top: 1px solid $cp-gry-li

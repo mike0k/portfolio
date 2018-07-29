@@ -1,0 +1,16 @@
+@import "compass"
+
+@import "../../_common/sass/_vars"
+@import "smacss/_vars"
+@import "../../_common/sass/_mixin"
+
+
+#site-loader
+  @include fill
+  position: fixed
+  background-color: #efefef
+  z-index: 99999
+  @include display-flex
+  @include align-items(center)
+  @include justify-content(center)
+

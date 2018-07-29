@@ -1,0 +1,47 @@
+////////////////////////////////////////////////
+// BOOTSTRAP
+////////////////////////////////////////////////
+
+.form-control
+  color: #999
+  @include transition(all 0.5s ease)
+  &:hover, &:focus
+    color: $cp-blk-li
+    background-color: #e6e6e6
+  &:focus
+    color: $cp-blk-md
+p.form-control
+  margin: 0
+  background-color: #e6e6e6
+  cursor: not-allowed
+
+.input-group-btn .btn
+  padding: 7px 12px
+
+
+.text-left
+  text-align: left !important
+.text-center
+  text-align: center !important
+.text-right
+  text-align: right !important
+.text-justify
+  text-align: justify !important
+
+
+////////////////////////////////////////////////
+// GOOGLE RE-CAPTCHA
+////////////////////////////////////////////////
+
+.captcha-center
+  overflow: hidden
+  .g-recaptcha
+    width: 304px
+    margin: 0 auto
+
+////////////////////////////////////////////////
+// YII
+////////////////////////////////////////////////
+
+.help-block-error
+  margin: 0

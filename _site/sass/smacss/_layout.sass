@@ -1,0 +1,125 @@
+////////////////////////////////////////////////
+// WRAPPING
+////////////////////////////////////////////////
+#site-loader
+  //@include transition(opacity 2s ease)
+  @include animation(site-loader-close-1 1s ease-in 1 forwards)
+  @include keyframes(site-loader-close-1)
+    0%
+      opacity: 1
+    50%
+      opacity: 1
+    99%
+      opacity: 0
+    100%
+      opacity: 0
+      z-index: -1
+  .logo
+    @include animation(none)
+  .loading-bar
+    height: 2px
+    margin: 15px 25px
+    background-color: $cp-wht-dk
+    position: relative
+    &:after
+      content: ""
+      background-color: $cp-blk-md
+      @include fill
+      right: 100%
+      @include animation(site-loader-close-2 1s ease-in 1 forwards)
+      @include keyframes(site-loader-close-2)
+        0%
+          right: 100%
+        50%, 100%
+          right: 0
+
+.wrap-site
+  overflow: hidden
+  min-width: 290px
+  border: 1px solid $cp-pri-md
+  background-color: $cp-wht-li
+  color: $cp-acc-dk
+  padding: 30px
+  margin: 15px auto
+  @include box-shadow(0 0 3px rgba($cp-blk-dk, 0.2), inset 0 0 15px rgba($cp-blk-dk, 0.1))
+
+.wrap-site-inner
+  background-image: url("#{$im-dir}bg/page-bg.jpg")
+  padding: 30px
+  border: 1px solid $cp-gry-li
+
+////////////////////////////////////////////////
+// FOOTER
+////////////////////////////////////////////////
+
+.wrap-footer
+  font-size: $fs-sm
+  padding-bottom: 0
+  .footer-left
+    padding-top: 30px
+  .footer-right
+    text-align: right
+
+////////////////////////////////////////////////
+// HEADER
+////////////////////////////////////////////////
+
+.header
+  .logo
+    img
+      width: 100%
+      padding: 50px 30px
+
+////////////////////////////////////////////////
+// MENU
+////////////////////////////////////////////////
+
+.main-menu-toggle
+  position: fixed
+  left: 15px
+  top: 15px
+  padding: 10px 14px
+  background-color: $cp-wht-li
+  border: 1px solid $cp-gry-li
+  color: $cp-acc-md
+  z-index: 3
+  &:hover, &:focus, &.active
+    background-color: $cp-acc-md
+    color: $cp-wht-li
+
+.wrap-menu
+  @include transition(all 0.5s ease)
+  position: fixed
+  left: -300px
+  top: 0
+  bottom: 0
+  opacity: 0
+  width: 250px
+  padding: 74px 0 15px 0
+  background-color: $cp-wht-md
+  border-right: 1px solid $cp-gry-li
+  z-index: 2
+  &.active
+    left: 0
+    opacity: 1
+
+.main-menu
+  a
+    display: block
+    padding: 10px 15px
+    border-top: 1px solid $cp-acc-md
+    color: $cp-acc-md
+    &:hover, &:focus, &.active
+      background-color: $cp-acc-md
+      color: $cp-wht-li
+  li:first-child a
+    border-color: transparent
+
+////////////////////////////////////////////////
+// TITLE
+////////////////////////////////////////////////
+.title
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5
+    text-transform: uppercase
+    font-weight: $fw-li
+    margin: 0
