@@ -1,0 +1,746 @@
+2012/12/16 22:57:07 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.baserUrl" is not defined.' in G:\localhost\Portfolio\framework\base\CComponent.php:131
+Stack trace:
+#0 G:\localhost\Portfolio\framework\base\CModule.php(106): CComponent->__get('baserUrl')
+#1 G:\localhost\Portfolio\protected\views\site\index.php(8): CModule->__get('baserUrl')
+#2 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require('G:\localhost\Po...')
+#3 G:\localhost\Portfolio\framework\web\CBaseController.php(96): CBaseController->renderInternal('G:\localhost\Po...', NULL, true)
+#4 G:\localhost\Portfolio\framework\web\CController.php(870): CBaseController->renderFile('G:\localhost\Po...', NULL, true)
+#5 G:\localhost\Portfolio\framework\web\CController.php(783): CController->renderPartial('index', NULL, true)
+#6 G:\localhost\Portfolio\protected\controllers\SiteController.php(32): CController->render('index')
+#7 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#8 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 G:\localhost\Portfolio\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 G:\localhost\Portfolio\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): CController->run('index')
+#12 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#13 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 G:\localhost\Portfolio\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Portfolio/index.php?r=site/index
+HTTP_REFERER=http://localhost/Portfolio/index.php?r=site/contact
+---
+2012/12/16 22:57:28 [error] [exception.CException] exception 'CException' with message 'Property "CHttpRequest.baserUrl" is not defined.' in G:\localhost\Portfolio\framework\base\CComponent.php:131
+Stack trace:
+#0 G:\localhost\Portfolio\protected\views\site\index.php(8): CComponent->__get('baserUrl')
+#1 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require('G:\localhost\Po...')
+#2 G:\localhost\Portfolio\framework\web\CBaseController.php(96): CBaseController->renderInternal('G:\localhost\Po...', NULL, true)
+#3 G:\localhost\Portfolio\framework\web\CController.php(870): CBaseController->renderFile('G:\localhost\Po...', NULL, true)
+#4 G:\localhost\Portfolio\framework\web\CController.php(783): CController->renderPartial('index', NULL, true)
+#5 G:\localhost\Portfolio\protected\controllers\SiteController.php(32): CController->render('index')
+#6 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#7 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 G:\localhost\Portfolio\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 G:\localhost\Portfolio\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): CController->run('index')
+#11 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#12 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 G:\localhost\Portfolio\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Portfolio/index.php?r=site/index
+HTTP_REFERER=http://localhost/Portfolio/index.php?r=site/contact
+---
+2013/01/06 20:20:37 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "//site/nav".' in G:\localhost\Portfolio\framework\web\CController.php:879
+Stack trace:
+#0 G:\localhost\Portfolio\protected\views\layouts\main.php(42): CController->renderPartial('//site/nav')
+#1 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require('G:\localhost\Po...')
+#2 G:\localhost\Portfolio\framework\web\CBaseController.php(96): CBaseController->renderInternal('G:\localhost\Po...', Array, true)
+#3 G:\localhost\Portfolio\framework\web\CController.php(785): CBaseController->renderFile('G:\localhost\Po...', Array, true)
+#4 G:\localhost\Portfolio\protected\controllers\SiteController.php(32): CController->render('index')
+#5 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 G:\localhost\Portfolio\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 G:\localhost\Portfolio\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): CController->run('')
+#10 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#11 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 G:\localhost\Portfolio\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Portfolio/
+---
+2013/01/06 20:20:54 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "nav".' in G:\localhost\Portfolio\framework\web\CController.php:879
+Stack trace:
+#0 G:\localhost\Portfolio\protected\views\layouts\main.php(42): CController->renderPartial('nav')
+#1 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require('G:\localhost\Po...')
+#2 G:\localhost\Portfolio\framework\web\CBaseController.php(96): CBaseController->renderInternal('G:\localhost\Po...', Array, true)
+#3 G:\localhost\Portfolio\framework\web\CController.php(785): CBaseController->renderFile('G:\localhost\Po...', Array, true)
+#4 G:\localhost\Portfolio\protected\controllers\SiteController.php(32): CController->render('index')
+#5 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 G:\localhost\Portfolio\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 G:\localhost\Portfolio\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): CController->run('')
+#10 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#11 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 G:\localhost\Portfolio\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Portfolio/
+---
+2013/01/06 20:20:59 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "/nav".' in G:\localhost\Portfolio\framework\web\CController.php:879
+Stack trace:
+#0 G:\localhost\Portfolio\protected\views\layouts\main.php(42): CController->renderPartial('/nav')
+#1 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require('G:\localhost\Po...')
+#2 G:\localhost\Portfolio\framework\web\CBaseController.php(96): CBaseController->renderInternal('G:\localhost\Po...', Array, true)
+#3 G:\localhost\Portfolio\framework\web\CController.php(785): CBaseController->renderFile('G:\localhost\Po...', Array, true)
+#4 G:\localhost\Portfolio\protected\controllers\SiteController.php(32): CController->render('index')
+#5 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 G:\localhost\Portfolio\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 G:\localhost\Portfolio\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): CController->run('')
+#10 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#11 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 G:\localhost\Portfolio\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Portfolio/
+---
+2013/01/06 20:21:00 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "/nav".' in G:\localhost\Portfolio\framework\web\CController.php:879
+Stack trace:
+#0 G:\localhost\Portfolio\protected\views\layouts\main.php(42): CController->renderPartial('/nav')
+#1 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require('G:\localhost\Po...')
+#2 G:\localhost\Portfolio\framework\web\CBaseController.php(96): CBaseController->renderInternal('G:\localhost\Po...', Array, true)
+#3 G:\localhost\Portfolio\framework\web\CController.php(785): CBaseController->renderFile('G:\localhost\Po...', Array, true)
+#4 G:\localhost\Portfolio\protected\controllers\SiteController.php(32): CController->render('index')
+#5 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 G:\localhost\Portfolio\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 G:\localhost\Portfolio\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): CController->run('')
+#10 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#11 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 G:\localhost\Portfolio\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Portfolio/
+---
+2013/01/06 20:21:12 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "\site/nav".' in G:\localhost\Portfolio\framework\web\CController.php:879
+Stack trace:
+#0 G:\localhost\Portfolio\protected\views\layouts\main.php(42): CController->renderPartial('\site/nav')
+#1 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require('G:\localhost\Po...')
+#2 G:\localhost\Portfolio\framework\web\CBaseController.php(96): CBaseController->renderInternal('G:\localhost\Po...', Array, true)
+#3 G:\localhost\Portfolio\framework\web\CController.php(785): CBaseController->renderFile('G:\localhost\Po...', Array, true)
+#4 G:\localhost\Portfolio\protected\controllers\SiteController.php(32): CController->render('index')
+#5 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 G:\localhost\Portfolio\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 G:\localhost\Portfolio\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): CController->run('')
+#10 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#11 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 G:\localhost\Portfolio\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Portfolio/
+---
+2013/01/06 20:21:18 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "\site\nav".' in G:\localhost\Portfolio\framework\web\CController.php:879
+Stack trace:
+#0 G:\localhost\Portfolio\protected\views\layouts\main.php(42): CController->renderPartial('\site\nav')
+#1 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require('G:\localhost\Po...')
+#2 G:\localhost\Portfolio\framework\web\CBaseController.php(96): CBaseController->renderInternal('G:\localhost\Po...', Array, true)
+#3 G:\localhost\Portfolio\framework\web\CController.php(785): CBaseController->renderFile('G:\localhost\Po...', Array, true)
+#4 G:\localhost\Portfolio\protected\controllers\SiteController.php(32): CController->render('index')
+#5 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 G:\localhost\Portfolio\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 G:\localhost\Portfolio\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): CController->run('')
+#10 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#11 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 G:\localhost\Portfolio\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Portfolio/
+---
+2013/01/06 20:21:32 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "//site/nav".' in G:\localhost\Portfolio\framework\web\CController.php:879
+Stack trace:
+#0 G:\localhost\Portfolio\protected\views\layouts\main.php(42): CController->renderPartial('//site/nav')
+#1 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require('G:\localhost\Po...')
+#2 G:\localhost\Portfolio\framework\web\CBaseController.php(96): CBaseController->renderInternal('G:\localhost\Po...', Array, true)
+#3 G:\localhost\Portfolio\framework\web\CController.php(785): CBaseController->renderFile('G:\localhost\Po...', Array, true)
+#4 G:\localhost\Portfolio\protected\controllers\SiteController.php(32): CController->render('index')
+#5 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 G:\localhost\Portfolio\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 G:\localhost\Portfolio\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): CController->run('')
+#10 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#11 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 G:\localhost\Portfolio\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Portfolio/
+---
+2013/01/06 20:22:28 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "//site/nav".' in G:\localhost\Portfolio\framework\web\CController.php:879
+Stack trace:
+#0 G:\localhost\Portfolio\protected\views\layouts\main.php(42): CController->renderPartial('//site/nav')
+#1 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require('G:\localhost\Po...')
+#2 G:\localhost\Portfolio\framework\web\CBaseController.php(96): CBaseController->renderInternal('G:\localhost\Po...', Array, true)
+#3 G:\localhost\Portfolio\framework\web\CController.php(785): CBaseController->renderFile('G:\localhost\Po...', Array, true)
+#4 G:\localhost\Portfolio\protected\controllers\SiteController.php(32): CController->render('index')
+#5 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 G:\localhost\Portfolio\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 G:\localhost\Portfolio\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): CController->run('')
+#10 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#11 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 G:\localhost\Portfolio\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Portfolio/
+---
+2013/01/06 20:22:46 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "site/nav".' in G:\localhost\Portfolio\framework\web\CController.php:879
+Stack trace:
+#0 G:\localhost\Portfolio\protected\views\layouts\main.php(42): CController->renderPartial('site/nav')
+#1 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require('G:\localhost\Po...')
+#2 G:\localhost\Portfolio\framework\web\CBaseController.php(96): CBaseController->renderInternal('G:\localhost\Po...', Array, true)
+#3 G:\localhost\Portfolio\framework\web\CController.php(785): CBaseController->renderFile('G:\localhost\Po...', Array, true)
+#4 G:\localhost\Portfolio\protected\controllers\SiteController.php(32): CController->render('index')
+#5 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 G:\localhost\Portfolio\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 G:\localhost\Portfolio\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): CController->run('')
+#10 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#11 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 G:\localhost\Portfolio\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Portfolio/
+---
+2013/01/06 20:22:47 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "site/nav".' in G:\localhost\Portfolio\framework\web\CController.php:879
+Stack trace:
+#0 G:\localhost\Portfolio\protected\views\layouts\main.php(42): CController->renderPartial('site/nav')
+#1 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require('G:\localhost\Po...')
+#2 G:\localhost\Portfolio\framework\web\CBaseController.php(96): CBaseController->renderInternal('G:\localhost\Po...', Array, true)
+#3 G:\localhost\Portfolio\framework\web\CController.php(785): CBaseController->renderFile('G:\localhost\Po...', Array, true)
+#4 G:\localhost\Portfolio\protected\controllers\SiteController.php(32): CController->render('index')
+#5 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 G:\localhost\Portfolio\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 G:\localhost\Portfolio\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): CController->run('')
+#10 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#11 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 G:\localhost\Portfolio\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Portfolio/
+---
+2013/01/06 20:22:58 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "site/leftNav".' in G:\localhost\Portfolio\framework\web\CController.php:879
+Stack trace:
+#0 G:\localhost\Portfolio\protected\views\layouts\main.php(42): CController->renderPartial('site/leftNav')
+#1 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require('G:\localhost\Po...')
+#2 G:\localhost\Portfolio\framework\web\CBaseController.php(96): CBaseController->renderInternal('G:\localhost\Po...', Array, true)
+#3 G:\localhost\Portfolio\framework\web\CController.php(785): CBaseController->renderFile('G:\localhost\Po...', Array, true)
+#4 G:\localhost\Portfolio\protected\controllers\SiteController.php(32): CController->render('index')
+#5 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 G:\localhost\Portfolio\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 G:\localhost\Portfolio\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): CController->run('')
+#10 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#11 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 G:\localhost\Portfolio\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Portfolio/
+---
+2013/01/07 20:34:17 [error] [php] Non-static method Skills::buildTable() should not be called statically, assuming $this from incompatible context (G:\localhost\Portfolio\protected\views\site\skills.php:3)
+Stack trace:
+#0 G:\localhost\Portfolio\framework\web\CController.php(870): SiteController->renderFile()
+#1 G:\localhost\Portfolio\protected\views\site\index.php(20): SiteController->renderPartial()
+#2 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require()
+#3 G:\localhost\Portfolio\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#4 G:\localhost\Portfolio\framework\web\CController.php(870): SiteController->renderFile()
+#5 G:\localhost\Portfolio\framework\web\CController.php(783): SiteController->renderPartial()
+#6 G:\localhost\Portfolio\protected\controllers\SiteController.php(17): SiteController->render()
+#7 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#8 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 G:\localhost\Portfolio\framework\web\CController.php(287): SiteController->runAction()
+#10 G:\localhost\Portfolio\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): SiteController->run()
+#12 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#13 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 G:\localhost\Portfolio\index.php(13): CWebApplication->run()
+REQUEST_URI=/Portfolio/
+in G:\localhost\Portfolio\protected\views\site\skills.php (3)
+in G:\localhost\Portfolio\protected\views\site\index.php (20)
+in G:\localhost\Portfolio\protected\controllers\SiteController.php (17)
+2013/01/07 20:35:43 [error] [php] Missing argument 1 for Skills::getData(), called in G:\localhost\Portfolio\protected\models\Skills.php on line 42 and defined (G:\localhost\Portfolio\protected\models\Skills.php:28)
+Stack trace:
+#0 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require()
+#1 G:\localhost\Portfolio\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#2 G:\localhost\Portfolio\framework\web\CController.php(870): SiteController->renderFile()
+#3 G:\localhost\Portfolio\protected\views\site\index.php(20): SiteController->renderPartial()
+#4 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require()
+#5 G:\localhost\Portfolio\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#6 G:\localhost\Portfolio\framework\web\CController.php(870): SiteController->renderFile()
+#7 G:\localhost\Portfolio\framework\web\CController.php(783): SiteController->renderPartial()
+#8 G:\localhost\Portfolio\protected\controllers\SiteController.php(17): SiteController->render()
+#9 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 G:\localhost\Portfolio\framework\web\CController.php(287): SiteController->runAction()
+#12 G:\localhost\Portfolio\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#13 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): SiteController->run()
+#14 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 G:\localhost\Portfolio\index.php(13): CWebApplication->run()
+REQUEST_URI=/Portfolio/
+in G:\localhost\Portfolio\protected\models\Skills.php (28)
+in G:\localhost\Portfolio\protected\models\Skills.php (42)
+in G:\localhost\Portfolio\protected\views\site\skills.php (4)
+2013/01/07 20:35:59 [error] [exception.CException] exception 'CException' with message 'Property "Skills.langs" is not defined.' in G:\localhost\Portfolio\framework\base\CComponent.php:131
+Stack trace:
+#0 G:\localhost\Portfolio\protected\models\Skills.php(32): CComponent->__get('langs')
+#1 G:\localhost\Portfolio\protected\models\Skills.php(42): Skills->getData('language')
+#2 G:\localhost\Portfolio\protected\views\site\skills.php(4): Skills->buildTable('Language', 'language')
+#3 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require('G:\localhost\Po...')
+#4 G:\localhost\Portfolio\framework\web\CBaseController.php(96): CBaseController->renderInternal('G:\localhost\Po...', NULL, true)
+#5 G:\localhost\Portfolio\framework\web\CController.php(870): CBaseController->renderFile('G:\localhost\Po...', NULL, true)
+#6 G:\localhost\Portfolio\protected\views\site\index.php(20): CController->renderPartial('skills')
+#7 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require('G:\localhost\Po...')
+#8 G:\localhost\Portfolio\framework\web\CBaseController.php(96): CBaseController->renderInternal('G:\localhost\Po...', NULL, true)
+#9 G:\localhost\Portfolio\framework\web\CController.php(870): CBaseController->renderFile('G:\localhost\Po...', NULL, true)
+#10 G:\localhost\Portfolio\framework\web\CController.php(783): CController->renderPartial('index', NULL, true)
+#11 G:\localhost\Portfolio\protected\controllers\SiteController.php(17): CController->render('index')
+#12 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#13 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 G:\localhost\Portfolio\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#15 G:\localhost\Portfolio\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): CController->run('')
+#17 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#18 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 G:\localhost\Portfolio\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/Portfolio/
+HTTP_REFERER=http://localhost/
+---
+2013/01/07 21:15:21 [error] [exception.CException] exception 'CException' with message 'Property "ContactForm.phone" is not defined.' in G:\localhost\Portfolio\framework\base\CComponent.php:131
+Stack trace:
+#0 G:\localhost\Portfolio\framework\web\helpers\CHtml.php(2044): CComponent->__get('phone')
+#1 G:\localhost\Portfolio\framework\web\helpers\CHtml.php(1774): CHtml::resolveValue(Object(ContactForm), 'phone')
+#2 G:\localhost\Portfolio\framework\web\helpers\CHtml.php(1205): CHtml::activeInputField('text', Object(ContactForm), 'phone', Array)
+#3 G:\localhost\Portfolio\framework\web\widgets\CActiveForm.php(575): CHtml::activeTextField(Object(ContactForm), 'phone', Array)
+#4 G:\localhost\Portfolio\protected\views\site\contact.php(44): CActiveForm->textField(Object(ContactForm), 'phone')
+#5 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require('G:\localhost\Po...')
+#6 G:\localhost\Portfolio\framework\web\CBaseController.php(96): CBaseController->renderInternal('G:\localhost\Po...', NULL, true)
+#7 G:\localhost\Portfolio\framework\web\CController.php(870): CBaseController->renderFile('G:\localhost\Po...', NULL, true)
+#8 G:\localhost\Portfolio\protected\views\site\index.php(24): CController->renderPartial('contact')
+#9 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require('G:\localhost\Po...')
+#10 G:\localhost\Portfolio\framework\web\CBaseController.php(96): CBaseController->renderInternal('G:\localhost\Po...', NULL, true)
+#11 G:\localhost\Portfolio\framework\web\CController.php(870): CBaseController->renderFile('G:\localhost\Po...', NULL, true)
+#12 G:\localhost\Portfolio\framework\web\CController.php(783): CController->renderPartial('index', NULL, true)
+#13 G:\localhost\Portfolio\protected\controllers\SiteController.php(17): CController->render('index')
+#14 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#15 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 G:\localhost\Portfolio\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 G:\localhost\Portfolio\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): CController->run('')
+#19 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#20 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 G:\localhost\Portfolio\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/Portfolio/
+HTTP_REFERER=http://localhost/
+---
+2013/01/09 21:21:04 [error] [php] require(gapi/gapi.class.php): failed to open stream: No such file or directory (G:\localhost\Portfolio\protected\views\site\footer.php:87)
+Stack trace:
+#0 G:\localhost\Portfolio\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#1 G:\localhost\Portfolio\framework\web\CController.php(870): SiteController->renderFile()
+#2 G:\localhost\Portfolio\protected\views\layouts\main.php(57): SiteController->renderPartial()
+#3 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require()
+#4 G:\localhost\Portfolio\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#5 G:\localhost\Portfolio\framework\web\CController.php(785): SiteController->renderFile()
+#6 G:\localhost\Portfolio\protected\controllers\SiteController.php(17): SiteController->render()
+#7 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#8 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 G:\localhost\Portfolio\framework\web\CController.php(287): SiteController->runAction()
+#10 G:\localhost\Portfolio\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): SiteController->run()
+#12 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#13 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 G:\localhost\Portfolio\index.php(13): CWebApplication->run()
+REQUEST_URI=/Portfolio/
+in G:\localhost\Portfolio\protected\views\site\footer.php (87)
+in G:\localhost\Portfolio\protected\views\site\footer.php (87)
+in G:\localhost\Portfolio\protected\views\layouts\main.php (57)
+2013/01/09 22:35:50 [error] [php] include(GoogleApi.php): failed to open stream: No such file or directory (G:\localhost\Portfolio\framework\YiiBase.php:418)
+Stack trace:
+#0 G:\localhost\Portfolio\protected\models\Scrape.php(23): spl_autoload_call()
+#1 G:\localhost\Portfolio\protected\views\site\footer.php(76): getGoogleBrowserUsageData()
+#2 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require()
+#3 G:\localhost\Portfolio\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#4 G:\localhost\Portfolio\framework\web\CController.php(870): SiteController->renderFile()
+#5 G:\localhost\Portfolio\protected\views\layouts\main.php(57): SiteController->renderPartial()
+#6 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require()
+#7 G:\localhost\Portfolio\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#8 G:\localhost\Portfolio\framework\web\CController.php(785): SiteController->renderFile()
+#9 G:\localhost\Portfolio\protected\controllers\SiteController.php(17): SiteController->render()
+#10 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#11 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 G:\localhost\Portfolio\framework\web\CController.php(287): SiteController->runAction()
+#13 G:\localhost\Portfolio\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#14 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): SiteController->run()
+#15 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#16 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 G:\localhost\Portfolio\index.php(13): CWebApplication->run()
+REQUEST_URI=/Portfolio/
+in G:\localhost\Portfolio\protected\models\Scrape.php (23)
+in G:\localhost\Portfolio\protected\views\site\footer.php (76)
+in G:\localhost\Portfolio\protected\views\layouts\main.php (57)
+2013/01/09 22:36:43 [error] [exception.Exception] exception 'Exception' with message 'GAPI: Failed to authenticate user. Error: "Error=BadAuthentication
+"' in G:\localhost\Portfolio\protected\components\Gapi.php:417
+Stack trace:
+#0 G:\localhost\Portfolio\protected\components\Gapi.php(61): Gapi->authenticateUser(NULL, 'juejveufgr2611')
+#1 G:\localhost\Portfolio\protected\models\Scrape.php(23): Gapi->__construct()
+#2 G:\localhost\Portfolio\protected\views\site\footer.php(76): Scrape::getGoogleBrowserUsageData()
+#3 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require('G:\localhost\Po...')
+#4 G:\localhost\Portfolio\framework\web\CBaseController.php(96): CBaseController->renderInternal('G:\localhost\Po...', NULL, true)
+#5 G:\localhost\Portfolio\framework\web\CController.php(870): CBaseController->renderFile('G:\localhost\Po...', NULL, true)
+#6 G:\localhost\Portfolio\protected\views\layouts\main.php(57): CController->renderPartial('//site/footer')
+#7 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require('G:\localhost\Po...')
+#8 G:\localhost\Portfolio\framework\web\CBaseController.php(96): CBaseController->renderInternal('G:\localhost\Po...', Array, true)
+#9 G:\localhost\Portfolio\framework\web\CController.php(785): CBaseController->renderFile('G:\localhost\Po...', Array, true)
+#10 G:\localhost\Portfolio\protected\controllers\SiteController.php(17): CController->render('index')
+#11 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#12 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 G:\localhost\Portfolio\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 G:\localhost\Portfolio\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): CController->run('')
+#16 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#17 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 G:\localhost\Portfolio\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/Portfolio/
+HTTP_REFERER=http://localhost/
+---
+2013/02/03 15:46:27 [error] [php] file_get_contents(http://en.wikipedia.org/wiki/Usage_share_of_web_browsers): failed to open stream: HTTP request failed! HTTP/1.0 403 Forbidden
+ (G:\localhost\Portfolio\protected\models\Scrape.php:5)
+Stack trace:
+#0 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require()
+#1 G:\localhost\Portfolio\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#2 G:\localhost\Portfolio\framework\web\CController.php(870): SiteController->renderFile()
+#3 G:\localhost\Portfolio\protected\views\layouts\main.php(57): SiteController->renderPartial()
+#4 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require()
+#5 G:\localhost\Portfolio\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#6 G:\localhost\Portfolio\framework\web\CController.php(785): SiteController->renderFile()
+#7 G:\localhost\Portfolio\protected\controllers\SiteController.php(17): SiteController->render()
+#8 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#9 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams()
+#10 G:\localhost\Portfolio\framework\web\CController.php(287): SiteController->runAction()
+#11 G:\localhost\Portfolio\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#12 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): SiteController->run()
+#13 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 G:\localhost\Portfolio\index.php(13): CWebApplication->run()
+REQUEST_URI=/Portfolio/
+in G:\localhost\Portfolio\protected\models\Scrape.php (5)
+in G:\localhost\Portfolio\protected\views\site\footer.php (65)
+in G:\localhost\Portfolio\protected\views\layouts\main.php (57)
+2013/02/03 15:46:40 [error] [php] file_get_contents(http://en.wikipedia.org/wiki/Usage_share_of_web_browsers): failed to open stream: HTTP request failed! HTTP/1.0 403 Forbidden
+ (G:\localhost\Portfolio\protected\models\Scrape.php:5)
+Stack trace:
+#0 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require()
+#1 G:\localhost\Portfolio\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#2 G:\localhost\Portfolio\framework\web\CController.php(870): SiteController->renderFile()
+#3 G:\localhost\Portfolio\protected\views\layouts\main.php(57): SiteController->renderPartial()
+#4 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require()
+#5 G:\localhost\Portfolio\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#6 G:\localhost\Portfolio\framework\web\CController.php(785): SiteController->renderFile()
+#7 G:\localhost\Portfolio\protected\controllers\SiteController.php(17): SiteController->render()
+#8 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#9 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams()
+#10 G:\localhost\Portfolio\framework\web\CController.php(287): SiteController->runAction()
+#11 G:\localhost\Portfolio\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#12 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): SiteController->run()
+#13 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 G:\localhost\Portfolio\index.php(13): CWebApplication->run()
+REQUEST_URI=/Portfolio/
+in G:\localhost\Portfolio\protected\models\Scrape.php (5)
+in G:\localhost\Portfolio\protected\views\site\footer.php (65)
+in G:\localhost\Portfolio\protected\views\layouts\main.php (57)
+2013/02/03 15:46:45 [error] [php] file_get_contents(http://en.wikipedia.org/wiki/Usage_share_of_web_browsers): failed to open stream: HTTP request failed! HTTP/1.0 403 Forbidden
+ (G:\localhost\Portfolio\protected\models\Scrape.php:5)
+Stack trace:
+#0 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require()
+#1 G:\localhost\Portfolio\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#2 G:\localhost\Portfolio\framework\web\CController.php(870): SiteController->renderFile()
+#3 G:\localhost\Portfolio\protected\views\layouts\main.php(57): SiteController->renderPartial()
+#4 G:\localhost\Portfolio\framework\web\CBaseController.php(127): require()
+#5 G:\localhost\Portfolio\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#6 G:\localhost\Portfolio\framework\web\CController.php(785): SiteController->renderFile()
+#7 G:\localhost\Portfolio\protected\controllers\SiteController.php(17): SiteController->render()
+#8 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#9 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams()
+#10 G:\localhost\Portfolio\framework\web\CController.php(287): SiteController->runAction()
+#11 G:\localhost\Portfolio\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#12 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): SiteController->run()
+#13 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 G:\localhost\Portfolio\index.php(13): CWebApplication->run()
+REQUEST_URI=/Portfolio/
+in G:\localhost\Portfolio\protected\models\Scrape.php (5)
+in G:\localhost\Portfolio\protected\views\site\footer.php (65)
+in G:\localhost\Portfolio\protected\views\layouts\main.php (57)
+2013/02/03 19:50:36 [error] [php] Use of undefined constant POS_END - assumed 'POS_END' (G:\localhost\Portfolio\protected\views\layouts\main.php:23)
+Stack trace:
+#0 G:\localhost\Portfolio\framework\web\CController.php(785): SiteController->renderFile()
+#1 G:\localhost\Portfolio\protected\controllers\SiteController.php(17): SiteController->render()
+#2 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 G:\localhost\Portfolio\framework\web\CController.php(287): SiteController->runAction()
+#5 G:\localhost\Portfolio\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#6 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): SiteController->run()
+#7 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#8 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 G:\localhost\Portfolio\index.php(13): CWebApplication->run()
+REQUEST_URI=/Portfolio/
+in G:\localhost\Portfolio\protected\views\layouts\main.php (23)
+in G:\localhost\Portfolio\protected\controllers\SiteController.php (17)
+in G:\localhost\Portfolio\index.php (13)
+2013/02/03 19:51:27 [error] [php] Use of undefined constant POS_END - assumed 'POS_END' (G:\localhost\Portfolio\protected\views\layouts\main.php:25)
+Stack trace:
+#0 G:\localhost\Portfolio\framework\web\CController.php(785): SiteController->renderFile()
+#1 G:\localhost\Portfolio\protected\controllers\SiteController.php(17): SiteController->render()
+#2 G:\localhost\Portfolio\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 G:\localhost\Portfolio\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 G:\localhost\Portfolio\framework\web\CController.php(287): SiteController->runAction()
+#5 G:\localhost\Portfolio\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#6 G:\localhost\Portfolio\framework\web\CWebApplication.php(276): SiteController->run()
+#7 G:\localhost\Portfolio\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#8 G:\localhost\Portfolio\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 G:\localhost\Portfolio\index.php(13): CWebApplication->run()
+REQUEST_URI=/Portfolio/
+in G:\localhost\Portfolio\protected\views\layouts\main.php (25)
+in G:\localhost\Portfolio\protected\controllers\SiteController.php (17)
+in G:\localhost\Portfolio\index.php (13)
+2013/02/04 13:47:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'michaelk'@'localhost' (using password: YES)' in /home3/michaelk/public_html/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home3/michaelk/public_html/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home3/michaelk/public_html/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home3/michaelk/public_html/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home3/michaelk/public_html/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(MkBrowserStats))
+#7 /home3/michaelk/public_html/protected/models/MkBrowserStats.php(4): CActiveRecord::model('MkBrowserStats')
+#8 /home3/michaelk/public_html/protected/views/site/footer.php(65): MkBrowserStats::model()
+#9 /home3/michaelk/public_html/framework/web/CBaseController.php(127): require('/home3/michaelk...')
+#10 /home3/michaelk/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home3/michaelk...', NULL, true)
+#11 /home3/michaelk/public_html/framework/web/CController.php(870): CBaseController->renderFile('/home3/michaelk...', NULL, true)
+#12 /home3/michaelk/public_html/protected/views/layouts/main.php(59): CController->renderPartial('//site/footer')
+#13 /home3/michaelk/public_html/framework/web/CBaseController.php(127): require('/home3/michaelk...')
+#14 /home3/michaelk/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home3/michaelk...', Array, true)
+#15 /home3/michaelk/public_html/framework/web/CController.php(785): CBaseController->renderFile('/home3/michaelk...', Array, true)
+#16 /home3/michaelk/public_html/protected/controllers/SiteController.php(17): CController->render('index')
+#17 /home3/michaelk/public_html/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#18 /home3/michaelk/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#19 /home3/michaelk/public_html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#20 /home3/michaelk/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home3/michaelk/public_html/framework/web/CWebApplication.php(276): CController->run('')
+#22 /home3/michaelk/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#23 /home3/michaelk/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /home3/michaelk/public_html/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/
+---
+2013/02/04 13:57:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'michaelk'@'localhost' (using password: YES)' in /home3/michaelk/public_html/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home3/michaelk/public_html/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home3/michaelk/public_html/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home3/michaelk/public_html/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home3/michaelk/public_html/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(MkBrowserStats))
+#7 /home3/michaelk/public_html/protected/models/MkBrowserStats.php(4): CActiveRecord::model('MkBrowserStats')
+#8 /home3/michaelk/public_html/protected/views/site/footer.php(65): MkBrowserStats::model()
+#9 /home3/michaelk/public_html/framework/web/CBaseController.php(127): require('/home3/michaelk...')
+#10 /home3/michaelk/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home3/michaelk...', NULL, true)
+#11 /home3/michaelk/public_html/framework/web/CController.php(870): CBaseController->renderFile('/home3/michaelk...', NULL, true)
+#12 /home3/michaelk/public_html/protected/views/layouts/main.php(59): CController->renderPartial('//site/footer')
+#13 /home3/michaelk/public_html/framework/web/CBaseController.php(127): require('/home3/michaelk...')
+#14 /home3/michaelk/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home3/michaelk...', Array, true)
+#15 /home3/michaelk/public_html/framework/web/CController.php(785): CBaseController->renderFile('/home3/michaelk...', Array, true)
+#16 /home3/michaelk/public_html/protected/controllers/SiteController.php(17): CController->render('index')
+#17 /home3/michaelk/public_html/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#18 /home3/michaelk/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#19 /home3/michaelk/public_html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#20 /home3/michaelk/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home3/michaelk/public_html/framework/web/CWebApplication.php(276): CController->run('')
+#22 /home3/michaelk/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#23 /home3/michaelk/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /home3/michaelk/public_html/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/
+---
+2013/02/07 20:21:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)' in /home3/michaelk/public_html/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home3/michaelk/public_html/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home3/michaelk/public_html/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home3/michaelk/public_html/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home3/michaelk/public_html/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(MkBrowserStats))
+#7 /home3/michaelk/public_html/protected/models/MkBrowserStats.php(4): CActiveRecord::model('MkBrowserStats')
+#8 /home3/michaelk/public_html/protected/views/site/footer.php(63): MkBrowserStats::model()
+#9 /home3/michaelk/public_html/framework/web/CBaseController.php(127): require('/home3/michaelk...')
+#10 /home3/michaelk/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home3/michaelk...', NULL, true)
+#11 /home3/michaelk/public_html/framework/web/CController.php(870): CBaseController->renderFile('/home3/michaelk...', NULL, true)
+#12 /home3/michaelk/public_html/protected/views/layouts/main.php(59): CController->renderPartial('//site/footer')
+#13 /home3/michaelk/public_html/framework/web/CBaseController.php(127): require('/home3/michaelk...')
+#14 /home3/michaelk/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home3/michaelk...', Array, true)
+#15 /home3/michaelk/public_html/framework/web/CController.php(785): CBaseController->renderFile('/home3/michaelk...', Array, true)
+#16 /home3/michaelk/public_html/protected/controllers/SiteController.php(17): CController->render('index')
+#17 /home3/michaelk/public_html/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#18 /home3/michaelk/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#19 /home3/michaelk/public_html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#20 /home3/michaelk/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home3/michaelk/public_html/framework/web/CWebApplication.php(276): CController->run('')
+#22 /home3/michaelk/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#23 /home3/michaelk/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /home3/michaelk/public_html/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/robots.txt
+---
+2013/03/07 15:13:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'michaelk_mike'@'localhost' (using password: YES)' in /home3/michaelk/public_html/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home3/michaelk/public_html/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home3/michaelk/public_html/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home3/michaelk/public_html/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home3/michaelk/public_html/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(MkBrowserStats))
+#7 /home3/michaelk/public_html/protected/models/MkBrowserStats.php(4): CActiveRecord::model('MkBrowserStats')
+#8 /home3/michaelk/public_html/protected/views/site/footer.php(63): MkBrowserStats::model()
+#9 /home3/michaelk/public_html/framework/web/CBaseController.php(127): require('/home3/michaelk...')
+#10 /home3/michaelk/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home3/michaelk...', NULL, true)
+#11 /home3/michaelk/public_html/framework/web/CController.php(870): CBaseController->renderFile('/home3/michaelk...', NULL, true)
+#12 /home3/michaelk/public_html/protected/views/layouts/main.php(59): CController->renderPartial('//site/footer')
+#13 /home3/michaelk/public_html/framework/web/CBaseController.php(127): require('/home3/michaelk...')
+#14 /home3/michaelk/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home3/michaelk...', Array, true)
+#15 /home3/michaelk/public_html/framework/web/CController.php(785): CBaseController->renderFile('/home3/michaelk...', Array, true)
+#16 /home3/michaelk/public_html/protected/controllers/SiteController.php(17): CController->render('index')
+#17 /home3/michaelk/public_html/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#18 /home3/michaelk/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#19 /home3/michaelk/public_html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#20 /home3/michaelk/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home3/michaelk/public_html/framework/web/CWebApplication.php(276): CController->run('')
+#22 /home3/michaelk/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#23 /home3/michaelk/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /home3/michaelk/public_html/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/
+---
+2013/03/07 15:13:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'michaelk_mike'@'localhost' (using password: YES)' in /home3/michaelk/public_html/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home3/michaelk/public_html/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home3/michaelk/public_html/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home3/michaelk/public_html/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home3/michaelk/public_html/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(MkBrowserStats))
+#7 /home3/michaelk/public_html/protected/models/MkBrowserStats.php(4): CActiveRecord::model('MkBrowserStats')
+#8 /home3/michaelk/public_html/protected/views/site/footer.php(63): MkBrowserStats::model()
+#9 /home3/michaelk/public_html/framework/web/CBaseController.php(127): require('/home3/michaelk...')
+#10 /home3/michaelk/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home3/michaelk...', NULL, true)
+#11 /home3/michaelk/public_html/framework/web/CController.php(870): CBaseController->renderFile('/home3/michaelk...', NULL, true)
+#12 /home3/michaelk/public_html/protected/views/layouts/main.php(59): CController->renderPartial('//site/footer')
+#13 /home3/michaelk/public_html/framework/web/CBaseController.php(127): require('/home3/michaelk...')
+#14 /home3/michaelk/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home3/michaelk...', Array, true)
+#15 /home3/michaelk/public_html/framework/web/CController.php(785): CBaseController->renderFile('/home3/michaelk...', Array, true)
+#16 /home3/michaelk/public_html/protected/controllers/SiteController.php(17): CController->render('index')
+#17 /home3/michaelk/public_html/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#18 /home3/michaelk/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#19 /home3/michaelk/public_html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#20 /home3/michaelk/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home3/michaelk/public_html/framework/web/CWebApplication.php(276): CController->run('')
+#22 /home3/michaelk/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#23 /home3/michaelk/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /home3/michaelk/public_html/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/
+---
+2013/03/07 15:46:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'michaelk_mike'@'localhost' (using password: YES)' in /home3/michaelk/public_html/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home3/michaelk/public_html/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home3/michaelk/public_html/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home3/michaelk/public_html/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home3/michaelk/public_html/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(MkBrowserStats))
+#7 /home3/michaelk/public_html/protected/models/MkBrowserStats.php(4): CActiveRecord::model('MkBrowserStats')
+#8 /home3/michaelk/public_html/protected/views/site/footer.php(63): MkBrowserStats::model()
+#9 /home3/michaelk/public_html/framework/web/CBaseController.php(127): require('/home3/michaelk...')
+#10 /home3/michaelk/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home3/michaelk...', NULL, true)
+#11 /home3/michaelk/public_html/framework/web/CController.php(870): CBaseController->renderFile('/home3/michaelk...', NULL, true)
+#12 /home3/michaelk/public_html/protected/views/layouts/main.php(59): CController->renderPartial('//site/footer')
+#13 /home3/michaelk/public_html/framework/web/CBaseController.php(127): require('/home3/michaelk...')
+#14 /home3/michaelk/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home3/michaelk...', Array, true)
+#15 /home3/michaelk/public_html/framework/web/CController.php(785): CBaseController->renderFile('/home3/michaelk...', Array, true)
+#16 /home3/michaelk/public_html/protected/controllers/SiteController.php(17): CController->render('index')
+#17 /home3/michaelk/public_html/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#18 /home3/michaelk/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#19 /home3/michaelk/public_html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#20 /home3/michaelk/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home3/michaelk/public_html/framework/web/CWebApplication.php(276): CController->run('')
+#22 /home3/michaelk/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#23 /home3/michaelk/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /home3/michaelk/public_html/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/robots.txt
+---
+2013/07/03 15:29:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 126 Incorrect key file for table '/ramdisk/mysql/tmp/#sql_f4c_5.MYI'; try to repair it. The SQL statement executed was: SHOW COLUMNS FROM `mk_browser_stats`.
+in /home3/michaelk/public_html/protected/models/MkBrowserStats.php (4)
+in /home3/michaelk/public_html/protected/views/site/footer.php (63)
+in /home3/michaelk/public_html/protected/views/layouts/main.php (59)
+2013/07/03 15:29:25 [error] [exception.CDbException] exception 'CDbException' with message 'The table "mk_browser_stats" for active record class "MkBrowserStats" cannot be found in the database.' in /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(MkBrowserStats))
+#1 /home3/michaelk/public_html/protected/models/MkBrowserStats.php(4): CActiveRecord::model('MkBrowserStats')
+#2 /home3/michaelk/public_html/protected/views/site/footer.php(63): MkBrowserStats::model()
+#3 /home3/michaelk/public_html/framework/web/CBaseController.php(127): require('/home3/michaelk...')
+#4 /home3/michaelk/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home3/michaelk...', NULL, true)
+#5 /home3/michaelk/public_html/framework/web/CController.php(870): CBaseController->renderFile('/home3/michaelk...', NULL, true)
+#6 /home3/michaelk/public_html/protected/views/layouts/main.php(59): CController->renderPartial('//site/footer')
+#7 /home3/michaelk/public_html/framework/web/CBaseController.php(127): require('/home3/michaelk...')
+#8 /home3/michaelk/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home3/michaelk...', Array, true)
+#9 /home3/michaelk/public_html/framework/web/CController.php(785): CBaseController->renderFile('/home3/michaelk...', Array, true)
+#10 /home3/michaelk/public_html/protected/controllers/SiteController.php(17): CController->render('index')
+#11 /home3/michaelk/public_html/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#12 /home3/michaelk/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home3/michaelk/public_html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home3/michaelk/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home3/michaelk/public_html/framework/web/CWebApplication.php(276): CController->run('')
+#16 /home3/michaelk/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#17 /home3/michaelk/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home3/michaelk/public_html/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/robots.txt
+---
+2013/08/09 05:33:18 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 1030 Got error 28 from storage engine. The SQL statement executed was: SHOW COLUMNS FROM `mk_browser_stats`.
+in /home3/michaelk/public_html/protected/models/MkBrowserStats.php (4)
+in /home3/michaelk/public_html/protected/views/site/footer.php (63)
+in /home3/michaelk/public_html/protected/views/layouts/main.php (59)
+2013/08/09 05:33:18 [error] [exception.CDbException] exception 'CDbException' with message 'The table "mk_browser_stats" for active record class "MkBrowserStats" cannot be found in the database.' in /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /home3/michaelk/public_html/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(MkBrowserStats))
+#1 /home3/michaelk/public_html/protected/models/MkBrowserStats.php(4): CActiveRecord::model('MkBrowserStats')
+#2 /home3/michaelk/public_html/protected/views/site/footer.php(63): MkBrowserStats::model()
+#3 /home3/michaelk/public_html/framework/web/CBaseController.php(127): require('/home3/michaelk...')
+#4 /home3/michaelk/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home3/michaelk...', NULL, true)
+#5 /home3/michaelk/public_html/framework/web/CController.php(870): CBaseController->renderFile('/home3/michaelk...', NULL, true)
+#6 /home3/michaelk/public_html/protected/views/layouts/main.php(59): CController->renderPartial('//site/footer')
+#7 /home3/michaelk/public_html/framework/web/CBaseController.php(127): require('/home3/michaelk...')
+#8 /home3/michaelk/public_html/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home3/michaelk...', Array, true)
+#9 /home3/michaelk/public_html/framework/web/CController.php(785): CBaseController->renderFile('/home3/michaelk...', Array, true)
+#10 /home3/michaelk/public_html/protected/controllers/SiteController.php(17): CController->render('index')
+#11 /home3/michaelk/public_html/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#12 /home3/michaelk/public_html/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /home3/michaelk/public_html/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /home3/michaelk/public_html/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home3/michaelk/public_html/framework/web/CWebApplication.php(276): CController->run('')
+#16 /home3/michaelk/public_html/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#17 /home3/michaelk/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home3/michaelk/public_html/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://www.michaelkirkbright.co.uk/
+---

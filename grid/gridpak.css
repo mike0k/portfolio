@@ -1,0 +1,157 @@
+/*!
+ * Gridpak Beta CSS
+ *
+ * Generator - http://gridpak.com/
+ * Created by @erskinedesign
+ */
+ 
+ 
+
+/* Reusable column setup */
+#gridpakToggle{
+	position:absolute;
+	bottom:0;
+	right:0;
+	width:200px;
+	color:#ffffff;
+	font-size:20px;
+	background-color:#000000;
+	z-index:999;
+}
+
+.col, .colAlt {
+    border:0px solid rgba(0,0,0,0);
+    float:left;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -moz-background-clip:padding-box !important;
+    -webkit-background-clip:padding-box !important;
+    background-clip:padding-box !important;
+}
+
+
+
+    /* 1. 16 Column Grid 0px - Infinity 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    4.375%
+    Span 2:    10.75%
+    Span 3:    17.125%
+    Span 4:    23.5%
+    Span 5:    29.875%
+    Span 6:    36.25%
+    Span 7:    42.625%
+    Span 8:    49.0%
+    Span 9:    55.375%
+    Span 10:    61.75%
+    Span 11:    68.125%
+    Span 12:    74.5%
+    Span 13:    80.875%
+    Span 14:    87.25%
+    Span 15:    93.625%
+    Span 16:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 0px) {
+        
+        .col {
+            margin-left:2%;
+        	padding:0 0.5%;
+        }
+        
+        .row .col:first-child {
+            margin-left:0;
+        }
+        
+        
+        /*
+        Add your semantic classnames in alongside their corresponding spans here. e.g.
+        
+        .span3,
+        .my_semantic_class_name {
+            ...
+        }
+        */
+		
+		.left{
+			float:left;
+		}
+		
+		.right{
+			float:left;
+		}
+		
+		.center{
+			margin-left:auto;
+			margin-right:auto;
+		}
+        
+        .span1 {
+            width:4.375%;
+        }
+        .span2 {
+            width:10.75%;
+        }
+        .span3 {
+            width:17.125%;
+        }
+        .span4 {
+            width:23.5%;
+        }
+        .span5 {
+            width:29.875%;
+        }
+        .span6 {
+            width:36.25%;
+        }
+        .span7 {
+            width:42.625%;
+        }
+        .span8 {
+            width:49.0%;
+        }
+        .span9 {
+            width:55.375%;
+        }
+        .span10 {
+            width:61.75%;
+        }
+        .span11 {
+            width:68.125%;
+        }
+        .span12 {
+            width:74.5%;
+        }
+        .span13 {
+            width:80.875%;
+        }
+        .span14 {
+            width:87.25%;
+        }
+        .span15 {
+            width:93.625%;
+        }
+        .span16 {
+            margin-left:0;
+            width:100%;
+        }
+		
+		.sep1{
+			height:5px;
+		}
+		.sep2{
+			height:10px;
+		}
+		.sep3{
+			height:15px;
+		}
+		.sep4{
+			height:20px;
+		}
+		.sep5{
+			height:25px;
+		}
+    }
+

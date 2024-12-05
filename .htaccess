@@ -1,17 +1,8 @@
-DirectoryIndex index.html index.shtml index.xhtml index.wml index.perl index.pl index.plx index.ppl index.cgi index.jsp index.js index.jp index.php4 index.php3 index.php index.phtml index.htm home.htm default.htm index.fcgi default.html
-# -FrontPage-
+RewriteEngine on
 
-IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 
-<Limit GET POST>
-order deny,allow
-deny from all
-allow from all
-</Limit>
-<Limit PUT DELETE>
-order deny,allow
-deny from all
-</Limit>
-AuthName michaelkirkbright.co.uk
-AuthUserFile /home/michaelk/public_html/_vti_pvt/service.pwd
-AuthGroupFile /home/michaelk/public_html/_vti_pvt/service.grp
+# otherwise forward it to index.php
+RewriteRule . index.php

@@ -1,0 +1,4 @@
+<p class="preamble" style="text-align:justify;">
+	Welcome to the Portfolio of Michael Kirkbright,<br/>
+	a web developer with a passion for <em>exceptional</em> quality right down to the tiniest detail. Michael has had the pleasure of working with a range of clients, including <a href="http://www.nikkihairextensions.co.uk" target="_blank">Nikki Hair Extensions</a>, <a href="http://www.dicksonreid.co.uk " target="_blank">Dickson Reid</a>, <a href="http://www.musicaltutti.co.uk" target="_blank">Music Tutti</a> and also worked with the employers <a href="http://www.Superglass.co.uk" target="_blank">Superglass</a>, <a href="http://www.dundeecollege.ac.uk" target="_blank">Dundee College</a> and <a href="http://www.mcewanfraserlegal.co.uk" target="_blank">McEwan Fraser Legal</a>. Find out more at <a href="http://www.linkedin.com/pub/michael-kirkbright/33/14b/687" target="_blank">LinkedIn</a>
+</p>

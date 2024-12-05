@@ -1,0 +1,482 @@
+@font-face{
+	font-family: papyrus; src: local("papyrus"), url(type/papyrus.TTF);
+}  
+
+body{
+	margin: 0;
+	padding: 0;
+	color: #352611;
+	font: normal normal 62.5%/1 Georgia, serif;
+	background-color:#F7F6F4;
+}
+
+h1{
+	position:relative;
+	left:-50px;
+	margin: 0px; 
+	padding: 50px 0 20px 0; 
+	font-size: 10em; 
+	line-height: 50px;
+	font-family: 'papyrus', Georgia, serif; 
+	color:#444444;
+}
+
+h2{
+	margin: 0 0 0 20px; 
+	padding: 0; 
+	color: #6B4D22; 
+	font-family: 'papyrus', Georgia, serif; 
+	font-size: 4em; 
+	line-height: 50px; 
+	font-weight: normal;
+}
+
+h2 .amp {
+	color: #D3CABD;
+}
+
+h3{
+	margin: 0 0 0.3em; 
+	padding: 0; 
+	font-weight: normal; 
+	font-size: 6em;
+}
+
+h4{
+	margin: 0 0 1.563em; 
+	font-size: 1.6em; 
+	font-weight: normal; 
+	line-height: 1.563em; /* 25px */ 
+	letter-spacing: 3px; 
+	text-shadow:  1px 1px 2px #ffffff; 
+	text-shadow:  1px 1px 2px #ffffff; 
+	text-transform: uppercase;
+}
+
+p{
+	margin: 0 0 1.786em; 
+	font-size: 1.4em; 
+	line-height: 1.786em; /* 25px */
+}
+
+img{
+	display: block;
+}
+
+#content a{
+	padding: 0 3px; 
+	background-color: #F0EEE9; 
+	background-color: rgba(107, 77, 34, 0.1); 
+	color: #6B4D22; 
+	border-bottom: 1px dashed #6B4D22;
+}
+
+#content a:hover{
+	background-color: #6B4D22; 
+	background-color: #6B4D22; 
+	opacity:0.4; 
+	color: #ffffff; 
+	border-bottom: 1px dashed #6B4D22;
+}
+
+#space{
+	padding: 1.5% 0;
+}
+
+#pageOuter{
+	padding: 2.5% 2.5% 1% 2.5%;
+	border:1px solid #D3CABD;
+	background-color:#ffffff;
+	margin:0 auto;
+}
+
+*::selection{
+	background-color: #6B4D22; 
+	color: #fff;
+}
+
+#page{
+	margin: 0 auto; 
+	background: #ffffff url(../images/background_texture.jpg) left top repeat; 
+	border: 1px dotted #e0e0e0;
+}
+
+#pageInner{
+	position: relative; 
+	padding: 0; 
+	background: transparent url(../images/background_gutters.png) 150px top repeat-y;
+}
+
+#header{
+	padding: 2.5% 1.5% 0 17%; 
+	height: 222px;
+}
+
+#header  h2{
+	margin: 0 0 0 30%;
+}
+
+#footer{
+	padding: 20px 0 0 0; 
+}
+
+#footer h5{
+	clear: left;
+	margin: 0 0 0 3px; 
+	font-size: 1.2em; 
+	line-height: 25px; 
+	text-transform: uppercase; 
+	letter-spacing: 1px;
+}
+
+#footer p{
+	margin: 0 0 0 3px; 
+	color: #666; 
+	font-size: 1.3em; 
+	line-height: 1.923em; /* 25px */
+}
+
+#footer a{
+	padding: 3px 5px; 
+	background-color: #f6f6f6;  
+	background-color: rgba(0, 0, 0, 0.06); 
+	color: #666; 
+	border-bottom: 1px dotted #ccc; 
+	border-radius: 3px;
+}
+
+#footer a:hover{
+	background-color: rgb(34, 34, 34); 
+	color:#F4F4F4; 
+	border-bottom: none;
+}
+
+#footer .logoMini{
+	left:0;
+	padding: 0; 
+	font-size: 3em; 
+	line-height: auto;
+	padding:0 0 20px 0;
+}
+
+#footer .valid a{
+	padding:0px;
+	display:inline-block;
+	background:none;
+}
+
+#footer .valid a img{
+	opacity:0.4; 
+	padding: 5px 5px 0px 0px; 
+	float:left;
+}
+
+#footer .valid a img:hover{
+	opacity:0.8;
+}
+
+#footer .browserScrape table{
+	border-collapse:collapse;
+	margin:0;
+}
+
+#footer .browserScrape td, #footer .browserScrape th{
+	font-size:11px; 
+	text-align:center; 
+	color:#666666; 
+	padding:3px 0px;
+}
+#footer .browserScrape p{
+	font-size:10px; 
+	text-align:left; 
+	color:#666666; 
+	padding-top:5px;
+}
+#footer .browserScrape a{
+	font-size:10px;
+}
+#footer .browserScrapeTableBor td, #footer .browserScrapeTableBor th{
+	border-bottom:1px solid #666666;
+}
+
+#navContainer{
+position: static;
+width:174px;
+}
+#navWidth{
+	height:1px;
+}
+.fixed {
+	position: fixed;
+	top: 0;   
+}
+
+#nav ul{
+	position: relative; 
+	top: 21px; 
+	margin: 0; 
+	padding: 0; 
+	width: 130px; 
+	list-style-type: none;
+}
+
+#nav ul.fixed{
+	position: fixed;
+}
+
+#nav li{
+	margin: 0 -20px 0 0; 
+	padding: 0 0 0 0; 
+	border-top: 1px solid #D3CABD;
+}
+
+#nav li a{
+	display: block; 
+	margin: 0; 
+	padding: 7px 0 18px 12px; 
+	color: #6B4D22; 
+	font-family: Georgia, serif; 
+	font-size: 1.4em; 
+	line-height: 1.714em; /* 25px */ 
+	text-align: left; 
+	text-decoration: none; 
+	text-transform: uppercase; 
+	letter-spacing: 0.5px; 
+	outline: none;
+}
+
+#nav li a:hover{
+	background-color: #F0EEE9; 
+	background-color: rgba(107, 77, 34, 0.1); 
+	color: #6B4D22;
+}
+
+.groupSep{
+	clear:both;
+	background-color:#D3CABD;
+	height:1px;
+	margin: 0 0 10px 0;
+}
+
+.preamble{
+	margin: -9px 12px 34px 0; 
+	padding: 0; 
+	font-size: 2em; 
+	line-height: 37.5px;
+}
+
+.preamble:first-line{
+	font-weight: bold;
+}
+
+.preamble em{
+	color: #6B4D22;
+}
+
+.preamble a{
+	padding: 4px 5px; 
+	border-radius: 3px;
+}
+
+.availability{
+	text-align: center;
+}
+
+.frame img, img.frame{
+	border:1px solid #D3CABD;
+	background-color:#ffffff;
+	padding:9px;
+	margin: 5px;
+}
+
+.stars{
+	width:100px;
+	height:20px;
+	overflow:hidden;
+	background-color:transparent;
+	background-image:url(../images/stars2.png);
+	background-repeat:no-repeat
+}
+.s1{background-position:0 -112px;}
+.s2{background-position:0 -84px;}
+.s3{background-position:0 -56px;}
+.s4{background-position:0 -28px;}
+.s5{background-position:0 0;}
+
+.expert td	{font-weight:bold;}
+
+.skills th, .quali th{
+	font-size:1.4em; 
+	line-height:1.786em; 
+	border-top: 1px solid #D3CABD; 
+	border-bottom: 1px solid #D3CABD;
+}
+.skills td, .quali td{
+	font-size:1.4em; 
+	line-height:1.786em; 
+	padding:0px; 
+	margin:0px;
+}
+
+.contact  p{
+	margin: 0 0 1.042em; 
+}
+
+.contact label{
+	position: relative; 
+	float: left;  
+	color: #6B4D22; 
+	text-transform: lowercase;
+	font-size: 2.4em; 
+	line-height: 1.042em; /* 25px */
+}
+
+.contact label em{
+	display: block; 
+	color: #D3CABD; 
+	font-size: 0.5em; 
+	font-style: normal; 
+	line-height: 2.083em; /* 25px */ 
+	text-transform: uppercase; 
+	letter-spacing: 1px;
+}
+
+.contact input, .contact textarea{
+	color:rgba(107, 77, 34, 0.1);
+	border: none;
+	font-family: Georgia, serif; 
+	font-size: 2em; 
+	font-style: italic; 
+	outline: none;
+}
+
+.contact input:focus, .contact textarea:focus{
+	color: #352611;
+	font-style: normal; 
+}
+
+.contact input{
+	padding: 4px 0; 
+	background: none; 
+	border-bottom: 1px solid #D3CABD; 
+}
+
+.contact textarea{
+	float: left; 
+	margin: -6px 0 0; 
+	padding: 0; 
+	width: 378px; 
+	overflow: hidden; 
+	background: transparent url(../images/background_textarea.png) left top repeat;  
+	line-height: 38px; 
+	vertical-align: baseline; 
+	resize: none; 
+	height:38px; 
+	min-height:114px;
+}
+
+.contact .buttons input{
+	float: right; 
+	display: block; 
+	margin: 13px -1px 11px 0; 
+	padding: 10px; 
+	width: 160px; 
+	background-color: #F0EEE9; 
+	background-color: rgba(107, 77, 34, 0.1); 
+	color: #6B4D22; 
+	border: none; 
+	border: 1px solid #D3CABD; 
+	font-family: Georgia, serif; 
+	font-size: 1.5em; /* 12px */ 
+	text-transform: uppercase; 
+	cursor: pointer; 
+	outline: none; 
+	border-radius: 3px;
+}
+
+.contact .row{
+	padding:15px 0;
+}
+
+.contact .required{
+	color: #D3CABD;
+    display: block;
+    font-size: 0.5em;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: 2.083em;
+    text-transform: uppercase;
+}
+
+.contact .verification *{
+	display:inline-block;
+	float:none;
+}
+
+.contact .errorMessage{
+	font-size: 1.5em;
+	padding:5px 0 5px 10px;
+}
+
+.min100{min-width:100px !important;}
+.min150{min-width:150px !important;}
+.min200{min-width:205px !important;}
+.min250{min-width:250px !important;}
+.min300{min-width:300px !important;}
+
+
+#caseStudiesSlider{
+	width:100%;
+	padding: 0 0 15px 0;
+}
+#caseStudiesSlider .sliderBox .slideItem {
+	width:812px;
+	height:340px;
+	display:block;
+}
+
+.caseStudiesNav li {
+	background-color:#222222;
+	display: inline-block;
+	height: 12px;
+	width: 33%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+.caseStudiesNav li:hover{
+	cursor: pointer; 
+	background-color:#dddddd;
+}
+
+.caseStudiesNav li a{
+	display:block;
+	height:12px;
+}
+.caseStudiesNav .current{
+	background-color:#777777;
+}
+.caseStudiesNav .current:hover{
+	background-color:#777777;
+}
+
+#caseStudiesSlider img{
+	width: 460px; 
+	height:307px;
+}
+
+
+#caseStudiesSlider h2{
+	margin:0px;
+}
+
+#caseStudiesSlider h4{
+	margin:0px; 
+	letter-spacing:2px;
+}
+
+#caseStudiesSlider p{
+	margin:0px;
+}
+
+.snapshottextP1{font-size:12px;}
+.snapshottextP2{font-size:12px; color:#878787; padding:0px 0px 25px 0px;}
