@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<sites>
+  <site>
+    <name>name1</name>
+    <filename>african_strings.jpg</filename>
+    <description>description1</description>
+  </site>
+  <site>
+    <name>name1</name>
+    <filename>avs.jpg</filename>
+    <description>description1</description>
+  </site>
+</sites>
