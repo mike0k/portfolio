@@ -1,0 +1,61 @@
+/*
+Flaticon icon font: Flaticon
+Creation date: 20/06/2018 01:56
+*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("font/Flaticon.eot");
+  src: url("font/Flaticon.eot?#iefix") format("embedded-opentype"),
+  url("font/Flaticon.woff") format("woff"),
+  url("font/Flaticon.ttf") format("truetype"),
+  url("font/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("font/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+.fi:before {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.fi-animite:before {
+  content: "\f100";
+}
+
+.fi-web-dev:before {
+  content: "\f101";
+}
+
+.fi-audit:before {
+  content: "\f102";
+}
+
+.fi-maintenance:before {
+  content: "\f103";
+}
+
+.fi-marketing:before {
+  content: "\f104";
+}
+
+.fi-soft-dev:before {
+  content: "\f105";
+}

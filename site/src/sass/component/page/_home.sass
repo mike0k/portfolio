@@ -1,0 +1,115 @@
+.pageHome
+  .about
+    .imgFrameRound
+      width: 200px
+      height: 200px
+      float: left
+      margin: 0 15px 15px 0
+
+  .skills, .qualification
+    th
+      font-weight: $fw-dk
+      font-family: $ff-pri-alt
+    td
+      font-family: $ff-pri-alt
+    thead
+      th
+        padding-left: 8px
+        font-family: $ff-sec
+    .stars
+      width: 150px
+      text-align: right
+      svg
+        font-size: $fs-lg
+
+  .case
+    & > section
+      height: 400px
+      overflow: hidden
+      position: relative
+      cursor: pointer
+      transition: height 0.5s
+      &:after
+        content: ''
+        @include fill
+        top: auto
+        height: 100px
+        transition: bottom 0.5s
+        background: linear-gradient(0deg, rgba($cp-wht,1) 0%, rgba($cp-wht,0.8) 50%, rgba($cp-wht,0) 100%)
+      &:not(.active)
+        &:hover, &:focus
+          &:after
+            bottom: -50px
+      &.active
+        height: auto
+        &:after
+          opacity: 0
+    .caseName
+      font-size: $fs-xl
+    .caseCompany
+      font-size: $fs-sm
+      a
+        font-size: $fs-md
+    .imgFrame
+      p
+        text-align: center
+        color: $cp-wht
+        font-size: $fs-xxl
+        font-family: $ff-sec
+      .btn
+        margin-bottom: 16px
+    .sep
+      border-top: 1px solid $cp-pri-li
+      height: 1px
+      width: 50%
+      margin: 30px auto
+
+  .archive
+    .item
+      padding: 0 15px
+      .imgFrame
+        cursor: pointer
+        overflow: hidden
+        @include aspect-ratio(16, 9)
+        margin-bottom: 15px
+        img
+          @include fill
+          bottom: auto
+
+  .contact
+    .contactForm *
+      font-family: $ff-pri-alt
+    .sent
+      h1
+        color: $cp-acc-md
+      p
+        font-size: $fs-xl
+    .textField, .textArea
+      .label
+        font-size: $fs-xl
+        //color: $cp-wht-dk
+      .field
+        font-size: $fs-lg
+        //color: $cp-wht
+        padding-top: 15px
+        &:before
+          border-color: $cp-gry-li
+        &:after
+          border-color: $cp-acc-md
+      .error
+        color: $cp-acc-li
+        font-size: $fs-md
+    .btn
+      @extend .hvr-shutter-out-horizontal
+      background-color: $cp-pri-li
+      font-size: $fs-lg
+      font-weight: $fw-dk
+      padding: 10px 15px
+      z-index: 600
+    .recaptcha
+      @include flexed
+      z-index: 500
+      .error
+        color: $cp-acc-li
+        font-size: $fs-md
+        text-align: center

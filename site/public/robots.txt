@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://www.michaelkirkbright.co.uk/sitemap.xml

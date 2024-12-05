@@ -1,0 +1,194 @@
+////////////////////////////////////////////////
+// LAYOUT
+////////////////////////////////////////////////
+
+.wrapSite
+  line-height: 1.6
+  min-height: 100vh
+  min-width: 320px
+  overflow: hidden
+  position: relative
+  border: 1px solid $cp-pri-md
+  background-color: $cp-wht-li
+  padding: 30px
+  margin: 15px auto
+  box-shadow: 0 0 3px rgba($cp-blk-dk, 0.2), inset 0 0 15px rgba($cp-blk-dk, 0.1)
+  .wrapSiteInner
+    background-image: url("#{$im-dir}bg/page-bg.jpg")
+    padding: 30px
+    border: 1px solid $cp-gry-li
+
+#splash, .loading
+  @include fill
+  @include flexed
+  position: fixed
+  background-image: radial-gradient(ellipse at center, $cp-pri-md 1%, $cp-pri-dk 72%, $cp-pri-dk 96%)
+  transition: opacity 1s ease-in
+  z-index: 9999
+  .icon
+    position: absolute
+    bottom: 10%
+    left: 0
+    right: 0
+    text-align: center
+    min-height: 50px
+  .logo
+    padding-bottom: 30px
+
+  &.inactive
+    animation: fadeToBack 2s linear forwards
+
+
+////////////////////////////////////////////////
+// HEADRER
+////////////////////////////////////////////////
+.header
+  text-align: center
+  padding: 50px 0
+  h1
+    overflow: hidden
+    height: 1px
+    line-height: 3
+    margin: 0
+
+////////////////////////////////////////////////
+// MENU
+////////////////////////////////////////////////
+.menu
+  .menuBg
+    @include fill
+    position: fixed
+    display: none
+  .menuToggle
+    position: fixed
+    top: 0
+    left: 0
+    width: 50px
+    height: 50px
+    @include flexed
+    button
+      color: $cp-wht-md !important
+    .menuToggleBtn
+
+  .menuBar
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 0
+    width: 50px
+    background-color: $cp-acc-li
+    box-shadow: 1px 0 5px 0 rgba($cp-blk-dk, 0.5)
+    cursor: pointer
+    transition: all 0.5s
+    .top
+      text-transform: uppercase
+      font-size: $fs-lg
+      font-weight: $fw-li
+      font-family: $ff-sec
+      color: $cp-wht-md !important
+      transform: rotate(-90deg)
+      transition: all 0.5s
+      position: absolute
+      top: 65px
+      left: -3px
+      margin: 0
+    .bottom
+      position: absolute
+      bottom: 25px
+      padding: 0 10px
+      width: 100%
+      img
+        width: 100%
+    &:hover
+      .top
+        color: $cp-acc-md
+  .menuPanel
+    position: fixed
+    top: 0
+    left: -250px
+    bottom: 0
+    opacity: 0
+    width: 250px
+    padding-top: 50px
+    transition: all 0.5s ease-out
+    box-shadow: 1px 0 5px 0 rgba($cp-blk-dk, 0.5)
+    background-color: $cp-acc-li
+    display: flex
+    align-items: center
+    justify-content: center
+    .menuHeader
+      padding: 7vh 25px 7vh 25px
+      a
+        display: block
+        text-align: center
+        background-color: transparent !important
+        img
+          width: 100%
+    .menuFooter
+      padding: 7vh 25px 25px 25px
+      text-align: center
+      .item
+        @extend .a
+        i
+          font-size: $fs-lg
+      p
+        color: $cp-gry-md
+        font-size: $fs-xs
+      .copyright
+        font-size: $fs-xxs
+    .menuItems
+      .item
+        padding: 14px 20px 14px 25px
+        margin-bottom: 5px
+        text-align: left
+        font-weight: $fw-dk
+        color: $cp-gry-md
+        background-color: $cp-acc-li
+        font-size: $fs-sm
+        font-family: $ff-sec
+        &:before
+          content: ''
+          @include fill
+          border-left: 10px solid $cp-wht-md
+        &:hover, &:focus
+          background-color: $cp-wht-dk
+          color: $cp-nvy-li
+          &:before
+            border-color: $cp-acc-dk
+
+  &:hover, &:focus
+    .menuBar
+      background-color: $cp-acc-li
+      box-shadow: 1px 0 8px 0 rgba($cp-blk-dk, 0.7)
+
+
+  &.active
+    .menuBg
+      display: block
+    .menuToggle
+      button
+        color: $cp-acc-md
+    .menuPanel
+      opacity: 1
+      left: 0
+
+
+
+////////////////////////////////////////////////
+// FOOTER
+////////////////////////////////////////////////
+.footer
+  padding-top: 30px
+  font-size: $fs-sm
+  border-top: 1px solid $cp-gry-li
+  font-family: $ff-pri-alt
+  .footerLogo
+    @include flexed(flex-end)
+    text-align: right
+    img
+      max-height: 40px
+    p
+      text-align: right
+
+.title
+  font-size: $fs-xxxl

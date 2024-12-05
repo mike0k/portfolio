@@ -1,65 +1,84 @@
-// Gulp.js configuration
-// npm install --save-dev gulp gulp-compass gulp-minify-css gulp-rename gulp-uglify gulp-plumber
-var
-    // modules
-    gulp = require('gulp'),
-    compass = require('gulp-compass'),
-    minifycss = require('gulp-minify-css'),
-    plumber = require('gulp-plumber'),
-    rename = require('gulp-rename'),
-    uglify = require('gulp-uglify')
-;
+// npm install --save-dev gulp-cli gulp gulp-sass node-sass gulp-minify-css gulp-rename gulp-uglify gulp-plumber
 
-// Builds
-gulp.task('default', ['watch']);
-gulp.task('build', ['site-js', 'site-css']);
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const minifycss = require('gulp-minify-css');
+const rename = require('gulp-rename');
+const plumber = require('gulp-plumber');
+const uglify = require('gulp-uglify');
 
-// Watch files
-gulp.task('watch', function () {
-    gulp.watch('_site/js/**/*.js', ['site-js']);
-    gulp.watch('_site/sass/**/*.sass', ['site-css']);
-    gulp.watch('_common/sass/**/*.sass', ['admin-css', 'site-css']);
-});
+sass.compiler = require('node-sass');
 
-gulp.task('site-js', function () {
-    return gulp.src(['_site/js/**/*.js'])
+function adminCss() {
+    return gulp
+        .src('admin/sass/*.sass')
         .pipe(plumber())
-        .pipe(gulp.dest('_site/web/js/'))
-        .pipe(uglify())
-        .pipe(rename(function (path) {
-            path.basename += ".min";
-            path.extname = ".js";
-        }))
-        .pipe(gulp.dest('_site/web/js/'));
-});
-gulp.task('site-css', function () {
-    return gulp.src('_site/sass/*.sass')
-        .pipe(plumber())
-        .pipe(compass({
-            css: '_site/web/css',
-            sass: '_site/sass',
-            image: '_site/web/img'
-        }))
-        //.pipe(gulp.dest('web/css/dev'))
+        .pipe(sass())
+        .pipe(gulp.dest('admin/web/css/'))
         .pipe(minifycss())
-        .pipe(rename(function (path) {
-            path.basename += ".min";
-            path.extname = ".css";
-        }))
-        .pipe(gulp.dest('_site/web/css/'));
-});
+        .pipe(
+            rename(function(path) {
+                path.basename += '.min';
+                path.extname = '.css';
+            })
+        )
+        .pipe(gulp.dest('admin/web/css/'));
+}
 
-
-gulp.task('yii', function () {
-
-    //return gulp.src(['js/**/*.js', '!js/**/*.min.js'])
-    return gulp.src(['vendor/yiisoft/yii2/assets/*.js'])
+function adminJs() {
+    return gulp
+        .src('admin/js/**/*.js')
         .pipe(plumber())
-        .pipe(rename(function (path) {
-            path.basename += ".min";
-            path.extname = ".js";
-        }))
+        .pipe(gulp.dest('admin/web/js/'))
         .pipe(uglify())
-        .pipe(gulp.dest('vendor/yiisoft/yii2/assets/'));
+        .pipe(
+            rename(function(path) {
+                path.basename += '.min';
+                path.extname = '.js';
+            })
+        )
+        .pipe(gulp.dest('admin/web/js/'));
+}
 
-});
+function mailCss() {
+    return gulp
+        .src('common/mail/assets/sass/*.sass')
+        .pipe(plumber())
+        .pipe(sass())
+        .pipe(gulp.dest('common/mail/assets/css/'))
+        .pipe(minifycss())
+        .pipe(
+            rename(function(path) {
+                path.basename += '.min';
+                path.extname = '.css';
+            })
+        )
+        .pipe(gulp.dest('common/mail/assets/css/'));
+}
+
+function siteCss() {
+    return gulp
+        .src('site/src/sass/build/**/*.sass')
+        .pipe(plumber())
+        .pipe(sass())
+        .pipe(gulp.dest('site/src/static/css/'))
+        .pipe(
+            rename(function(path) {
+                path.basename += '.module';
+                path.extname = '.css';
+            })
+        )
+        .pipe(gulp.dest('site/src/static/css/'));
+}
+
+function watch() {
+    gulp.watch('common/sass/**/*', siteCss);
+    gulp.watch('common/mail/assets/sass/**/*', mailCss);
+    gulp.watch('site/src/sass/**/*', siteCss);
+}
+
+exports.watch = watch;
+exports.adminCss = adminCss;
+exports.adminJs = adminJs;
+exports.mailCss = mailCss;
+exports.siteCss = siteCss;
