@@ -50,7 +50,6 @@ class ModelSkills extends Model {
             'GIT' => 4,
             'Google Adwords' => 4,
             'Google Analytics' => 4,
-            'NodeJS' => 4,
             'Photoshop' => 4,
             'Web Scraping' => 4,
 
@@ -63,6 +62,7 @@ class ModelSkills extends Model {
 
             'Android SDK' => 2,
             'LinkedIn PPC' => 2,
+            'NodeJS' => 2,
         ];
     }
 

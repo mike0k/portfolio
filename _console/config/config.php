@@ -7,14 +7,14 @@ Yii::setAlias('@web', dirname(dirname(__DIR__)) . '/web');
 $baseUrl = str_replace('_admin/web', 'admin', (new Request)->getBaseUrl());
 
 $config = [
-    'id' => 'free-agent-console',
-    'name' => 'Free Agent Console',
+    'id' => 'portfolio-console',
+    'name' => 'Portfolio Console',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'console\controllers',
     'components' => [
         'urlManager' => [
             'baseUrl' => $baseUrl,
-            'hostInfo' => (!YII_DEBUG ? 'https://admin.freeagent.com' : null),
+            'hostInfo' => (!YII_DEBUG ? 'https://www.michaelkirkbright.com' : null),
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [

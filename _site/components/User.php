@@ -10,7 +10,9 @@ use yii;
  */
 class User extends \common\components\User {
 
-
+    /**
+     * @return \common\components\User|null
+     */
     public function getDbUser () {
         if (empty($this->_dbUser) && !$this->isGuest) {
             $user = DbContact::find()->where(['id' => $this->id])->one();

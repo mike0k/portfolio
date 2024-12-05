@@ -78,8 +78,10 @@ use yii\helpers\Html;
         </div>
     </div>
 
-    <div class="sep sep-sm"></div>
+<?php /*
 
+ <div class="sep sep-sm"></div>
+ 
     <div class="case section-20" id="delta-economics">
         <div class="row">
             <div class="col-sm-6">
@@ -120,5 +122,6 @@ use yii\helpers\Html;
             </div>
         </div>
     </div>
+ */ ?>
 
 </div>
