@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 
 import Blurb from './Blurb';
 import Footer from './Footer';
+import Form from './Form';
 import Links from './Links';
 
 const VAbout = () => {
@@ -14,6 +15,7 @@ const VAbout = () => {
             <Blurb />
             <Links />
             <Footer />
+            <Form />
         </Box>
     );
 };

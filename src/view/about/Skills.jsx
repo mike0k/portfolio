@@ -12,6 +12,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { MdCheck, MdClose, MdBrightness1 } from 'react-icons/md';
 
+import Anim from '../asset/Anim';
 import * as UList from '../../util/List.jsx';
 import * as UTool from '../../util/Tool.jsx';
 
@@ -96,42 +97,46 @@ const VSkills = () => {
 
     return (
         <Container sx={sx.container} id='skills'>
-            <Typography variant='h1' sx={sx.title1}>
-                Skills
-            </Typography>
-            <Typography sx={sx.legend}>
-                {UTool.map(scores, (score) => (
-                    <Box component='span' key={score.id}>
-                        {score.name}: {score.icon}
-                    </Box>
-                ))}
-            </Typography>
-            <Box sx={sx.filter}>
-                <Stack direction='row' spacing={1}>
-                    {UTool.map(groupsBase, (group) => {
-                        const active = groups.includes(group.id);
-                        return (
-                            <Chip
-                                key={group.id}
-                                label={group.name}
-                                onClick={() => onFilter(group.id)}
-                                color='primary'
-                                disabled={active && disableFilter}
-                                variant={active ? 'filled' : 'outlined'}
-                                icon={active ? <MdCheck /> : <MdClose />}
-                            />
-                        );
-                    })}
-                </Stack>
-            </Box>
+            <Anim anim='fadeInUp'>
+                <Typography variant='h1' sx={sx.title1}>
+                    Skills
+                </Typography>
+            </Anim>
+            <Anim anim='fadeIn'>
+                <Typography sx={sx.legend}>
+                    {UTool.map(scores, (score) => (
+                        <Box component='span' key={score.id}>
+                            {score.name}: {score.icon}
+                        </Box>
+                    ))}
+                </Typography>
+                <Box sx={sx.filter}>
+                    <Stack direction='row' spacing={1}>
+                        {UTool.map(groupsBase, (group) => {
+                            const active = groups.includes(group.id);
+                            return (
+                                <Chip
+                                    key={group.id}
+                                    label={group.name}
+                                    onClick={() => onFilter(group.id)}
+                                    color='primary'
+                                    disabled={active && disableFilter}
+                                    variant={active ? 'filled' : 'outlined'}
+                                    icon={active ? <MdCheck /> : <MdClose />}
+                                />
+                            );
+                        })}
+                    </Stack>
+                </Box>
+            </Anim>
 
             <Box>
                 <Table size='small'>
                     <TableHead sx={sx.row}>
                         <TableRow>
-                            <TableCell>Category</TableCell>
                             <TableCell>Name</TableCell>
                             <TableCell>Expertise</TableCell>
+                            <TableCell>Category</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody sx={sx.body}>

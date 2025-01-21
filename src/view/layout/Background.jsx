@@ -4,6 +4,9 @@ import { loadSlim } from '@tsparticles/slim';
 
 const stars = {
     fpsLimit: 120,
+    fullScreen: {
+        //enable: false,
+    },
 
     interactivity: {
         events: {
@@ -83,7 +86,7 @@ const stars = {
     detectRetina: true,
 };
 
-const VBackground = () => {
+const VParticles = () => {
     const [init, setInit] = React.useState(false);
 
     React.useEffect(() => {
@@ -97,4 +100,4 @@ const VBackground = () => {
     return <React.Fragment>{init && <Particles options={stars} />}</React.Fragment>;
 };
 
-export default VBackground;
+export default VParticles;

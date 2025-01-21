@@ -1,6 +1,6 @@
 export const skills = {
     framework: {
-        Bootstap: 3,
+        Bootstrap: 3,
         jQuery: 3,
         MVC: 3,
         React: 3,
@@ -19,7 +19,7 @@ export const skills = {
         PHP: 3,
 
         HTAccess: 2,
-        'JS / ES6': 2,
+        'JS / ES7': 2,
         XML: 2,
 
         Bash: 1,
@@ -34,7 +34,7 @@ export const skills = {
         'Mentoring & Training': 2,
         'Unit Economics': 2,
 
-        Bookeeping: 1,
+        Bookkeeping: 1,
     },
 
     software: {

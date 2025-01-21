@@ -4,6 +4,8 @@ import * as R from 'ramda';
 const initialState = {
     route: '',
     redirect: '',
+    contactForm: 0,
+    timer: 0,
 };
 
 export const slice = createSlice({

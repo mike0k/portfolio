@@ -5,17 +5,22 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { MdKeyboardDoubleArrowUp } from 'react-icons/md';
 
+import Anim from '../asset/Anim';
 import * as ULayout from '../../util/Layout.jsx';
 
 const VContactBlurb = () => {
     return (
         <Box sx={sx.container}>
-            <IconButton sx={sx.btn} onClick={() => ULayout.scroll('hi')}>
-                <MdKeyboardDoubleArrowUp />
-            </IconButton>
-            <Typography sx={sx.copyright}>
-                &copy; 2024-present Michael Kirkbright. All Rights Reserved.
-            </Typography>
+            <Anim anim='fadeInUp' delay={3}>
+                <IconButton sx={sx.btn} onClick={() => ULayout.scroll('hi')}>
+                    <MdKeyboardDoubleArrowUp />
+                </IconButton>
+            </Anim>
+            <Anim anim='fadeInUp' delay={2.5}>
+                <Typography sx={sx.copyright}>
+                    &copy; 2024-present Michael Kirkbright. All Rights Reserved.
+                </Typography>
+            </Anim>
         </Box>
     );
 };
@@ -33,7 +38,7 @@ const sx = {
     },
     copyright: {
         paddingTop: '1rem',
-        fontSize: '1.5rem',
+        fontSize: '1rem',
     },
 };
 

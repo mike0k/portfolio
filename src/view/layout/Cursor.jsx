@@ -15,9 +15,11 @@ const VCursor = () => {
             outerAlpha={0}
             outerStyle={{
                 border: '1px solid ' + theme.palette.primary.main,
+                zIndex: 1500,
             }}
             innerStyle={{
                 backgroundColor: theme.palette.primary.main,
+                zIndex: 1500,
             }}
         />
     );

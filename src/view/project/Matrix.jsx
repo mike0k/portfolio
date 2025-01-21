@@ -27,8 +27,8 @@ const VProject = () => {
                         Order Management & Workflow System
                     </Typography>
                     <Box sx={sx.skills}>
-                        {UTool.map(skills, (skill) => (
-                            <Typography variant='body2' sx={sx.skill}>
+                        {UTool.map(skills, (skill, i) => (
+                            <Typography variant='body2' sx={sx.skill} key={i}>
                                 {skill}
                             </Typography>
                         ))}
@@ -108,20 +108,6 @@ const sx = {
         width: '100%',
         animation: 'img-pan 3s ease-in forwards',
         position: 'absolute',
-    },
-
-    imgAnim: {
-        '@keyframes img-pan': {
-            '0%': {
-                top: 0,
-            },
-            '50%': {
-                top: '-100%',
-            },
-            '100%': {
-                top: 0,
-            },
-        },
     },
 };
 
