@@ -13,7 +13,7 @@ const config = {
         img: '/media/img/',
     },
     url: {
-        cv: 'https://drive.google.com/file/d/1H-mkJDmG0D85UY5wxKQAIoAwcHJyJXFq/view?usp=sharing',
+        cv: 'https://drive.google.com/file/d/1AD8_EWx0Hqhljm3mhqXXw1GLdnjCArUi/view?usp=sharing',
         showreel: 'https://vimeo.com/1047889183/281b012768',
         domain: 'https://www.michaelkirkbright.co.uk',
     },
