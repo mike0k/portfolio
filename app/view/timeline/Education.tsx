@@ -18,7 +18,7 @@ const VTimelineEducation = () => {
         const item = items[i];
         const length = item.length + 2;
         compiled.push(
-            <TimelineItem key={i}>
+            <TimelineItem key={i} sx={sx.item}>
                 <TimelineOppositeContent color='text.secondary'>
                     <Typography>{item.date}</Typography>
                 </TimelineOppositeContent>
@@ -38,6 +38,15 @@ const VTimelineEducation = () => {
         );
     }
     return <React.Fragment>{compiled}</React.Fragment>;
+};
+
+const sx = {
+    item: {
+        '&:before': {
+            // fix broken ::before in default Material UI styling
+            display: 'none',
+        },
+    },
 };
 
 export default VTimelineEducation;

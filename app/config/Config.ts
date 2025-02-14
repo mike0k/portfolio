@@ -13,11 +13,11 @@ const config = {
         img: '/media/img/',
     },
     url: {
-        cv: 'https://drive.google.com/file/d/1AD8_EWx0Hqhljm3mhqXXw1GLdnjCArUi/view?usp=sharing',
+        cv: 'https://drive.google.com/file/d/1zxOv7dk9Qm5QgfuENpN05iA-ByLY_Ur_/view?usp=sharing',
         showreel: 'https://vimeo.com/1047889183/281b012768',
         domain: 'https://www.michaelkirkbright.co.uk',
     },
-    version: 'v0.0.1',
+    version: 'v1.2',
 };
 
 export default config;

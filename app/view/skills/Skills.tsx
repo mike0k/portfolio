@@ -52,7 +52,7 @@ const VSkills = () => {
             </Anim>
 
             <Box sx={sx.filter}>
-                <Stack direction='row' spacing={1}>
+                <Stack direction='row' spacing={{ xs: 1, sm: 2 }} useFlexGap sx={sx.tags}>
                     <Tags tagsBase={UList.skillTags} tags={tags} onFilter={onFilter} />
                 </Stack>
             </Box>
@@ -103,6 +103,10 @@ const sx = {
         display: 'table',
         width: '100%',
         tableLayout: 'fixed',
+    },
+    tags: {
+        flexWrap: 'wrap',
+        justifyContent: 'center',
     },
 };
 

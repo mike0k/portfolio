@@ -19,6 +19,7 @@ export const skills: UTypes.skillList[] = [
     { label: 'JavaScript', score: 10, tags: ['fro', 'lan', 'web'] },
     { label: 'Jira', score: 4, tags: ['man', 'sof'] },
     { label: 'jQuery', score: 8, tags: ['fro', 'fra', 'web'] },
+    { label: 'Laravel', score: 8, tags: ['bac', 'fra', 'web'] },
     { label: 'Material UI', score: 9, tags: ['fro', 'fra', 'web'] },
     { label: 'Mentoring & Training', score: 5, tags: ['man', 'ssk'] },
     { label: 'MVC', score: 8, tags: ['fra'] },

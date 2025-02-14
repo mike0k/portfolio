@@ -13,14 +13,22 @@ const VWordCloud = ({ skills, onClick }: Props) => {
     const theme = useTheme();
     const screen = useScreen();
 
+    let sizeMultiplier = 300;
     let height = Math.round(screen.height / 3);
+
+    if (screen.width < 900) {
+        height = Math.round(screen.height / 2);
+        sizeMultiplier = 800;
+    }
     if (height < 300) {
         height = 300;
     }
 
+    console.log('sizeMultiplier', sizeMultiplier);
+
     const data = skills.map((skill) => ({
         text: skill.label,
-        value: skill.score * 300,
+        value: skill.score * sizeMultiplier,
     }));
 
     return (
@@ -28,6 +36,7 @@ const VWordCloud = ({ skills, onClick }: Props) => {
             <WordCloud
                 data={data}
                 rotate={0}
+                padding={4}
                 height={height}
                 font={theme.typography.fontFamily}
                 onWordClick={(e, item) => onClick(item.text)}

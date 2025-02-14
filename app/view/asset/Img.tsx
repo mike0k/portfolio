@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Config from '../../config/Config';
 
 const AImg = ({ children, src, sx = {}, alt, type = 'img' }: Props) => {
-    const path = Config.path.img + src;
+    const path = Config.path.img + src + '?v=' + Config.version;
 
     if (type === 'bg') {
         return (
