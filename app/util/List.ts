@@ -115,7 +115,7 @@ export type ExperienceType = {
 export const experience: ExperienceType[] = [
     {
         date: '2020',
-        label: 'IT  Director',
+        label: 'IT Manager',
         location: 'Property Studios',
         length: 7,
     },
