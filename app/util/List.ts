@@ -3,16 +3,16 @@ import dbJson from '../store/db.json';
 import * as UTypes from './Types';
 
 //fetch the data for specific section of db.json
-const loadSheet = (id: string) => {
+const loadSheet = <T>(id: string): T[] => {
     const sheet = dbJson.sheets.find((item) => item.name === id);
 
-    return sheet ? sheet.lines : [];
+    return sheet ? (sheet.lines as T[]) : [];
 };
 
-export const education = loadSheet('education');
-export const experience = loadSheet('experience');
-export const skills = loadSheet('skills');
-export const skillTags = loadSheet('skills_tags');
+export const education = loadSheet<UTypes.education>('education');
+export const experience = loadSheet<UTypes.experience>('experience');
+export const skills = loadSheet<UTypes.skills>('skills');
+export const skillTags = loadSheet<UTypes.skillTags>('skills_tags');
 
 export const meta = (pageName: string) => {
     const pageDatas: UTypes.metaList = {

@@ -51,7 +51,7 @@ const sx = {
 };
 
 type Props = {
-    skills: UTypes.skillList[];
+    skills: UTypes.skills[];
     onClick: (item: string) => void;
 };
 

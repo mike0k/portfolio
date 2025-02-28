@@ -10,13 +10,12 @@ import Typography from '@mui/material/Typography';
 import Anim from '../asset/Anim';
 import BgColor from '../asset/BgColor';
 import * as UList from '../../util/List';
-import * as UTypes from '../../util/Types';
 
 import Tags from './Tags';
 import WordCloud from './WordCloud';
 
 const VSkills = () => {
-    const skillsBase: UTypes.skillList[] = UList.skills;
+    const skillsBase = UList.skills;
     const [skills, setSkills] = React.useState(skillsBase);
     const [tags, setTags] = React.useState(UList.skillTags.map((item) => item.id));
 

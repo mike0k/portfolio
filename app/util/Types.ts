@@ -9,16 +9,34 @@ export type animPreset = {
     };
 };
 
+export type education = {
+    date: string;
+    label: string;
+    location: string;
+    length: number;
+};
+
+export type experience = {
+    date: string;
+    label: string;
+    location: string;
+    length: number;
+};
+
 export type metaList = {
     [key: string]: {
         [key: string]: string;
     };
 };
 
-export type skillList = {
+export type skills = {
     label: string;
     score: number;
-    tags: string[];
+    tags: skillTag[];
+};
+
+type skillTag = {
+    tag: string;
 };
 
 export type skillTags = {
@@ -26,7 +44,7 @@ export type skillTags = {
     label: string;
 };
 
-export type skillWordCloud = skillList & {
+export type skillWordCloud = skills & {
     text: string;
     value: number;
 };
