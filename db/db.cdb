@@ -1,0 +1,741 @@
+{
+	"sheets": [
+		{
+			"name": "education",
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "date"
+				},
+				{
+					"typeStr": "1",
+					"name": "label",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "location",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "length"
+				}
+			],
+			"lines": [
+				{
+					"label": "HNC: Computer Programming",
+					"location": "Falkirk College",
+					"length": 0,
+					"date": "2003 - 2004"
+				},
+				{
+					"label": "HNC: Web Design & Development",
+					"location": "Falkirk College",
+					"length": 1,
+					"date": "2004-2005"
+				},
+				{
+					"label": "BSc Honours Degree: Web Design & Development",
+					"location": "University of Abertay",
+					"length": 1,
+					"date": "2005-2009"
+				},
+				{
+					"label": "UK Innovation Award",
+					"location": "Estate Agency of the Year Awards",
+					"length": 8,
+					"date": "2013"
+				},
+				{
+					"label": "Estate Agency Innovation Award",
+					"location": "Scottish Legal Awards",
+					"length": 1,
+					"date": "2014"
+				},
+				{
+					"label": "Business & Management Coaching",
+					"location": "Action Coach",
+					"length": 6,
+					"date": "2020-2024"
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "experience",
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "date"
+				},
+				{
+					"typeStr": "1",
+					"name": "label",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "location",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "length"
+				}
+			],
+			"lines": [
+				{
+					"date": "2007-2007",
+					"label": "Web Developer",
+					"location": "Dundee College",
+					"length": 0
+				},
+				{
+					"date": "2009-2020",
+					"label": "Freelance Developer",
+					"location": "Animite Media",
+					"length": 2
+				},
+				{
+					"date": "2010-2011",
+					"label": "Senior Web Developer",
+					"location": "Evolution Online",
+					"length": 1
+				},
+				{
+					"date": "2011-2013",
+					"label": "IT Manager",
+					"location": "McEwan Fraser Legal",
+					"length": 1
+				},
+				{
+					"date": "2013-2018",
+					"label": "Webmaster",
+					"location": "Miller Stewart",
+					"length": 1
+				},
+				{
+					"date": "2016-2024",
+					"label": "Property Studios",
+					"location": "IT Manager",
+					"length": 3
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "skills",
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "label",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "score"
+				},
+				{
+					"typeStr": "8",
+					"name": "tags"
+				}
+			],
+			"lines": [
+				{
+					"label": "Apache",
+					"score": 2,
+					"tags": [
+						{
+							"tag": "bac"
+						},
+						{
+							"tag": "sof"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "Bash",
+					"score": 2,
+					"tags": [
+						{
+							"tag": "lan"
+						}
+					]
+				},
+				{
+					"label": "Bookkeeping",
+					"score": 2,
+					"tags": [
+						{
+							"tag": "ssk"
+						}
+					]
+				},
+				{
+					"label": "Bootstrap",
+					"score": 8,
+					"tags": [
+						{
+							"tag": "fra"
+						},
+						{
+							"tag": "fro"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "Composer",
+					"score": 2,
+					"tags": [
+						{
+							"tag": "sof"
+						}
+					]
+				},
+				{
+					"label": "Docker",
+					"score": 4,
+					"tags": [
+						{
+							"tag": "bac"
+						},
+						{
+							"tag": "sof"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "cPanel",
+					"score": 4,
+					"tags": [
+						{
+							"tag": "bac"
+						},
+						{
+							"tag": "sof"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "CSS",
+					"score": 8,
+					"tags": [
+						{
+							"tag": "fro"
+						},
+						{
+							"tag": "lan"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "Firebase",
+					"score": 2,
+					"tags": [
+						{
+							"tag": "bac"
+						},
+						{
+							"tag": "fra"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "GIT",
+					"score": 6,
+					"tags": [
+						{
+							"tag": "sof"
+						}
+					]
+				},
+				{
+					"label": "Gulp",
+					"score": 1,
+					"tags": [
+						{
+							"tag": "sof"
+						}
+					]
+				},
+				{
+					"label": "HR Management",
+					"score": 1,
+					"tags": [
+						{
+							"tag": "man"
+						},
+						{
+							"tag": "ssk"
+						}
+					]
+				},
+				{
+					"label": "HTAccess",
+					"score": 4,
+					"tags": [
+						{
+							"tag": "bac"
+						},
+						{
+							"tag": "lan"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "HTML",
+					"score": 7,
+					"tags": [
+						{
+							"tag": "fro"
+						},
+						{
+							"tag": "lan"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "JavaScript",
+					"score": 10,
+					"tags": [
+						{
+							"tag": "fro"
+						},
+						{
+							"tag": "lan"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "Jira",
+					"score": 4,
+					"tags": [
+						{
+							"tag": "man"
+						},
+						{
+							"tag": "sof"
+						}
+					]
+				},
+				{
+					"label": "jQuery",
+					"score": 8,
+					"tags": [
+						{
+							"tag": "fro"
+						},
+						{
+							"tag": "fra"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "Laravel",
+					"score": 8,
+					"tags": [
+						{
+							"tag": "bac"
+						},
+						{
+							"tag": "fra"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "Material UI",
+					"score": 9,
+					"tags": [
+						{
+							"tag": "fro"
+						},
+						{
+							"tag": "fra"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "Mentoring & Training",
+					"score": 5,
+					"tags": [
+						{
+							"tag": "man"
+						},
+						{
+							"tag": "ssk"
+						}
+					]
+				},
+				{
+					"label": "MVC",
+					"score": 8,
+					"tags": [
+						{
+							"tag": "fra"
+						}
+					]
+				},
+				{
+					"label": "MySQL",
+					"score": 9,
+					"tags": [
+						{
+							"tag": "bac"
+						},
+						{
+							"tag": "lan"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "NextJS",
+					"score": 5,
+					"tags": [
+						{
+							"tag": "bac"
+						},
+						{
+							"tag": "fra"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "NodeJS",
+					"score": 4,
+					"tags": [
+						{
+							"tag": "bac"
+						},
+						{
+							"tag": "fra"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "NPM",
+					"score": 3,
+					"tags": [
+						{
+							"tag": "sof"
+						}
+					]
+				},
+				{
+					"label": "Photoshop",
+					"score": 4,
+					"tags": [
+						{
+							"tag": "sof"
+						}
+					]
+				},
+				{
+					"label": "PHP",
+					"score": 10,
+					"tags": [
+						{
+							"tag": "bac"
+						},
+						{
+							"tag": "lan"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "Project Management",
+					"score": 4,
+					"tags": [
+						{
+							"tag": "man"
+						},
+						{
+							"tag": "ssk"
+						}
+					]
+				},
+				{
+					"label": "React",
+					"score": 10,
+					"tags": [
+						{
+							"tag": "fro"
+						},
+						{
+							"tag": "fra"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "Recruitment",
+					"score": 2,
+					"tags": [
+						{
+							"tag": "man"
+						},
+						{
+							"tag": "ssk"
+						}
+					]
+				},
+				{
+					"label": "REST API",
+					"score": 8,
+					"tags": [
+						{
+							"tag": "bac"
+						},
+						{
+							"tag": "fra"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "SASS",
+					"score": 9,
+					"tags": [
+						{
+							"tag": "fro"
+						},
+						{
+							"tag": "lan"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "Team Management",
+					"score": 5,
+					"tags": [
+						{
+							"tag": "man"
+						},
+						{
+							"tag": "ssk"
+						}
+					]
+				},
+				{
+					"label": "TypeScript",
+					"score": 5,
+					"tags": [
+						{
+							"tag": "bac"
+						},
+						{
+							"tag": "fro"
+						},
+						{
+							"tag": "lan"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "Unit Economics",
+					"score": 2,
+					"tags": [
+						{
+							"tag": "ssk"
+						}
+					]
+				},
+				{
+					"label": "WHM",
+					"score": 3,
+					"tags": [
+						{
+							"tag": "bac"
+						},
+						{
+							"tag": "sof"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "Wordpress",
+					"score": 4,
+					"tags": [
+						{
+							"tag": "fra"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "Xero",
+					"score": 4,
+					"tags": [
+						{
+							"tag": "sof"
+						}
+					]
+				},
+				{
+					"label": "XML",
+					"score": 3,
+					"tags": [
+						{
+							"tag": "bac"
+						},
+						{
+							"tag": "lan"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				},
+				{
+					"label": "Yii",
+					"score": 9,
+					"tags": [
+						{
+							"tag": "bac"
+						},
+						{
+							"tag": "fra"
+						},
+						{
+							"tag": "web"
+						}
+					]
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "skills_tags",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "label",
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"id": "bac",
+					"label": "Backend"
+				},
+				{
+					"id": "fra",
+					"label": "Framework"
+				},
+				{
+					"id": "fro",
+					"label": "Frontend"
+				},
+				{
+					"id": "lan",
+					"label": "Language"
+				},
+				{
+					"id": "man",
+					"label": "Management"
+				},
+				{
+					"id": "ssk",
+					"label": "Soft Skills"
+				},
+				{
+					"id": "sof",
+					"label": "Software"
+				},
+				{
+					"id": "web",
+					"label": "Web"
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "skills@tags",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "6:skills_tags",
+					"name": "tag"
+				}
+			]
+		}
+	],
+	"customTypes": [],
+	"compress": false
+}

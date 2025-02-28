@@ -33,13 +33,12 @@ const VSkills = () => {
     const onClickWord = (name: string) => {
         const skill = skillsBase.find((skill) => skill.label === name);
         if (skill) {
-            console.log('skill-tags', skill.tags);
-            setTags(skill.tags);
+            setTags(skill.tags.map((t) => t.tag));
         }
     };
 
     React.useEffect(() => {
-        setSkills(skillsBase.filter((skill) => skill.tags.some((tag) => tags.includes(tag))));
+        setSkills(skillsBase.filter((skill) => skill.tags.some((t) => tags.includes(t.tag))));
     }, [tags, skillsBase]);
 
     return (

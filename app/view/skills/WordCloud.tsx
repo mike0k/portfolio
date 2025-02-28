@@ -24,8 +24,6 @@ const VWordCloud = ({ skills, onClick }: Props) => {
         height = 300;
     }
 
-    console.log('sizeMultiplier', sizeMultiplier);
-
     const data = skills.map((skill) => ({
         text: skill.label,
         value: skill.score * sizeMultiplier,
@@ -39,6 +37,7 @@ const VWordCloud = ({ skills, onClick }: Props) => {
                 padding={4}
                 height={height}
                 font={theme.typography.fontFamily}
+                fill='#ffffff'
                 onWordClick={(e, item) => onClick(item.text)}
             />
         </Box>

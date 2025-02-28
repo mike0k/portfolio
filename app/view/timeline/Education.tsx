@@ -12,7 +12,7 @@ import Anim from '../asset/Anim';
 import * as UList from '../../util/List';
 
 const VTimelineEducation = () => {
-    const items = UList.education;
+    const items = UList.education.reverse();
     const compiled = [];
     for (let i = 0; i < items.length; i++) {
         const item = items[i];
