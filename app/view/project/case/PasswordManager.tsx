@@ -9,9 +9,10 @@ const VCaseStudy = ({ playVideo, onPlayVideo }: Props) => {
             <Typography variant='h3' component='p'>
                 Secure Password Manager
             </Typography>
-            <Typography>
+            <Typography variant='subtitle1' sx={sx.subtitle}>
                 SUMMARY:
-                <br />
+            </Typography>
+            <Typography>
                 This is a simple but highly useful and cost effective tool for sharing password
                 internally across an organisation. Tieing into the companies existing Google
                 Workspace accounts for strong account management and authentication, along with
@@ -22,11 +23,11 @@ const VCaseStudy = ({ playVideo, onPlayVideo }: Props) => {
                 friction that might encourage bad security practices. Passwords could also be tested
                 to ensure a reasonable level of password strength is used by all company related
                 accounts, internally and externally.
-                <br />
-                <br />
+            </Typography>
+            <Typography variant='subtitle1' sx={sx.subtitle}>
                 FEATURES:
             </Typography>
-            <Box component='ul'>
+            <Box component='ul' sx={sx.features}>
                 <Box component='li'>Frictionless and familiar U.I</Box>
                 <Box component='li'>Role based editing privileges</Box>
                 <Box component='li'>Individual and group sharing</Box>
@@ -36,6 +37,15 @@ const VCaseStudy = ({ playVideo, onPlayVideo }: Props) => {
             </Box>
         </Layout>
     );
+};
+
+const sx = {
+    subtitle: {
+        paddingTop: '1rem',
+    },
+    features: {
+        margin: 0,
+    },
 };
 
 type Props = {
