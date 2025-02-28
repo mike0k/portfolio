@@ -58,16 +58,16 @@ const VMenuXs = ({ user, onStyle, onMute }: Props) => {
                         size='large'
                         variant='text'
                         color='light'
-                        onClick={() => onNav('showreel')}>
-                        Showreel
+                        onClick={() => onNav('skills')}>
+                        Skills
                     </Btn>
                     <Btn
                         sx={sx.btn}
                         size='large'
                         variant='text'
                         color='light'
-                        onClick={() => onNav('skills')}>
-                        Skills
+                        onClick={() => onNav('projects')}>
+                        Projects
                     </Btn>
                     <Btn
                         sx={sx.btn}

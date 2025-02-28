@@ -21,13 +21,13 @@ const VMenuLg = ({ user, onStyle, onMute }: Props) => {
                 </Btn>
             </Grid>
             <Grid size='grow'>
-                <Btn variant='text' color='light' onClick={() => ULayout.scroll('showreel')}>
-                    Showreel
+                <Btn variant='text' color='light' onClick={() => ULayout.scroll('skills')}>
+                    Skills
                 </Btn>
             </Grid>
             <Grid size='grow'>
-                <Btn variant='text' color='light' onClick={() => ULayout.scroll('skills')}>
-                    Skills
+                <Btn variant='text' color='light' onClick={() => ULayout.scroll('projects')}>
+                    Projects
                 </Btn>
             </Grid>
             <Grid size='grow'>

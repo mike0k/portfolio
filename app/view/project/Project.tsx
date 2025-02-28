@@ -3,29 +3,29 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
-import Showreel from './Showreel';
-
 import Anim from '../asset/Anim';
 import BgColor from '../asset/BgColor';
 
+import CaseStudies from './CaseStudies';
+
 const VProject = () => {
     return (
-        <Box sx={sx.container} id='showreel'>
+        <Box sx={sx.container} id='projects'>
             <BgColor sx={sx.bgColor1} color='primary' />
             <BgColor sx={sx.bgColor2} color='secondary' />
             <Anim anim='fadeInUp' delay={0.5}>
                 <Typography variant='h1' sx={sx.title1}>
-                    Showreel
+                    Projects
                 </Typography>
             </Anim>
             <Anim anim='fadeInUp' delay={0.8}>
                 <Typography variant='subtitle1' component='p' sx={sx.title2}>
-                    A short rundown of some things i've made.
+                    Some interesting parts from projects i've worked on recently
                 </Typography>
             </Anim>
 
             <Anim anim='fadeIn' delay={1.1}>
-                <Showreel />
+                <CaseStudies />
             </Anim>
         </Box>
     );

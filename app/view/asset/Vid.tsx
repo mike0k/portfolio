@@ -4,26 +4,20 @@ import ReactPlayer, { ReactPlayerProps } from 'react-player';
 
 import Box from '@mui/material/Box';
 
+import Config from '../../config/Config';
+
 const AVid = ({ src = '', play = false }: Props) => {
-    const path = src;
+    const path = Config.path.vid + src + '?v=' + Config.version;
 
     const player: ReactPlayerProps = {
         url: path,
         playing: play,
-        loop: false,
-        muted: false,
-        controls: true,
+        loop: true,
+        muted: true,
+        controls: false,
         height: '100%',
         width: '100%',
         style: sx.player,
-        vimeo: {
-            airplay: false,
-            chromecast: false,
-            pip: false,
-            play_button_position: 'bottom',
-            title: false,
-            vimeo_logo: false,
-        },
     };
 
     return (

@@ -11,6 +11,7 @@ const config = {
         base: './media/',
         aud: '/media/aud/',
         img: '/media/img/',
+        vid: '/media/vid/',
     },
     url: {
         cv: 'https://drive.google.com/file/d/17hphuuZDy_eNiGHZOLdmKIBYRaC2QPHh/view?usp=sharing',
