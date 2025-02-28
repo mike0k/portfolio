@@ -1,7 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Swiper as SwiperCore, SwiperOptions } from 'swiper/types';
-import { useSwiper } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 
 import 'swiper/css';
@@ -17,7 +16,6 @@ import VPasswordManager from './case/PasswordManager';
 import VPlotLocator from './case/PlotLocator';
 
 const VCarousel = () => {
-    const swiper = useSwiper();
     const [swiperInst, setSwiperInst] = React.useState<SwiperCore | null>(null);
     const [playVideo, setPlayVideo] = React.useState<boolean>(true);
 
