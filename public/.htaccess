@@ -10,8 +10,8 @@ Options -MultiViews
     RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
     # Redirect non-www to www
-    RewriteCond %{HTTP_HOST} ^yourdomain\.com [NC]
-    RewriteRule ^ https://www.yourdomain.com%{REQUEST_URI} [L,R=301]
+    RewriteCond %{HTTP_HOST} ^michaelkirkbright\.co.uk [NC]
+    RewriteRule ^ https://www.michaelkirkbright.co.uk%{REQUEST_URI} [L,R=301]
 
     # React SPA routing (handle 404s by serving index.html)
     RewriteCond %{REQUEST_FILENAME} !-f

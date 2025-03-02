@@ -6,28 +6,35 @@
         "dev": "next dev --turbopack",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "email": "email dev --dir ./src/mail",
+        "preemails": "rm -fr ./src/mail/static && cp -r public ./src/mail/static",
+        "postemails": "rm -fr ./src/mail/static/*"
     },
     "dependencies": {
         "@emotion/react": "^11.14.0",
         "@emotion/styled": "^11.14.0",
         "@mui/lab": "^6.0.0-beta.24",
         "@mui/material": "^6.4.1",
+        "@next/env": "^15.2.0",
+        "@react-email/components": "0.0.33",
         "@reduxjs/toolkit": "^2.5.1",
         "@vercel/analytics": "^1.5.0",
         "formik": "^2.4.6",
         "motion": "^12.0.6",
         "next": "15.1.6",
+        "notistack": "^3.0.2",
         "ramda": "^0.30.1",
-        "react": "^18.3.1",
+        "react": "18.3.1",
         "react-animated-cursor": "^2.11.2",
         "react-d3-cloud": "^1.0.6",
-        "react-dom": "^18.3.1",
+        "react-dom": "18.3.1",
         "react-google-recaptcha-v3": "^1.10.1",
         "react-icons": "^5.4.0",
         "react-player": "^2.16.0",
         "react-redux": "^9.2.0",
         "redux-persist": "^6.0.0",
+        "resend": "^4.1.2",
         "swiper": "^11.2.4",
         "usehooks-ts": "^3.1.0",
         "yup": "^1.6.1"
@@ -41,6 +48,7 @@
         "@types/swiper": "^6.0.0",
         "eslint": "^9",
         "eslint-config-next": "15.1.6",
+        "react-email": "3.0.7",
         "typescript": "^5"
     }
 }
