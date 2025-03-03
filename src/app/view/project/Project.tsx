@@ -20,7 +20,7 @@ const VProject = () => {
             </Anim>
             <Anim anim='fadeInUp' delay={0.8}>
                 <Typography variant='subtitle1' component='p' sx={sx.title2}>
-                    Some interesting parts from projects i've worked on recently
+                    Some interesting features from projects i've worked on recently
                 </Typography>
             </Anim>
 

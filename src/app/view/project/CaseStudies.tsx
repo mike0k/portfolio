@@ -20,6 +20,7 @@ import Vid from './case/Vid';
 const VCarousel = () => {
     const [swiperTxt, setSwiperTxt] = React.useState<SwiperCore | null>(null);
     const [swiperVid, setSwiperVid] = React.useState<SwiperCore | null>(null);
+    const [slideKey, setSlideKey] = React.useState<number>(0);
     const [playVideo, setPlayVideo] = React.useState<boolean>(true);
 
     const swiperProps: SwiperOptions = {
@@ -53,11 +54,9 @@ const VCarousel = () => {
         effect: 'creative',
         creativeEffect: {
             prev: {
-                //translate: [0, 0, -4000],
                 scale: 0,
             },
             next: {
-                //translate: [0, 0, -4000],
                 scale: 0,
             },
         },
@@ -71,24 +70,34 @@ const VCarousel = () => {
         if (next) {
             swiperTxt?.slideNext();
             swiperVid?.slideNext();
+            setSlideKey(slideKey + 1);
         } else {
             swiperTxt?.slidePrev();
             swiperVid?.slidePrev();
+            setSlideKey(slideKey - 1);
         }
     };
 
     return (
         <Box sx={sx.container}>
             <Box sx={sx.nav}>
-                <BtnIcon size='large' onClick={() => onNav(false)}>
+                <BtnIcon
+                    size='large'
+                    onClick={() => onNav(false)}
+                    disabled={slideKey <= 0}
+                    sx={sx.navBtn}>
                     <MdChevronLeft />
                 </BtnIcon>
-                <BtnIcon size='large' onClick={() => onNav(true)}>
+                <BtnIcon
+                    size='large'
+                    onClick={() => onNav(true)}
+                    disabled={slideKey >= 2}
+                    sx={sx.navBtn}>
                     <MdChevronRight />
                 </BtnIcon>
             </Box>
             <Grid container spacing={2} sx={sx.grid}>
-                <Grid size={{ xs: 12, lg: 6 }} sx={sx.vid} onClick={onPlayVideo}>
+                <Grid size={{ xs: 12, lg: 6 }} onClick={onPlayVideo}>
                     <Swiper
                         {...swiperPropsVid}
                         onSwiper={(swiper: SwiperCore) => setSwiperVid(swiper)}>
@@ -107,7 +116,7 @@ const VCarousel = () => {
                         </SwiperSlide>
                     </Swiper>
                 </Grid>
-                <Grid size={{ xs: 12, lg: 6 }} sx={sx.text}>
+                <Grid size={{ xs: 12, lg: 6 }}>
                     <Swiper
                         {...swiperPropsTxt}
                         onSwiper={(swiper: SwiperCore) => setSwiperTxt(swiper)}>
@@ -136,6 +145,10 @@ const sx = {
     nav: {
         display: 'flex',
         justifyContent: 'center',
+        paddingBottom: '1rem',
+    },
+    navBtn: {
+        fontSize: '2rem',
     },
     grid: {
         minHeight: '80vh',
