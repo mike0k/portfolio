@@ -21,13 +21,15 @@ const VIntro = () => {
             </Anim>
             <Anim anim='fadeInRight' delay={1.5}>
                 <Typography>
-                    Driven by a passion for coding from an early age, I began with self-taught
-                    skills and quickly progressed from entry-level roles to middle-management and
-                    eventually to director-level positions, overseeing 40+ employees and managing
-                    all aspects of business operations, including finance, HR, and marketing. With
-                    extensive experience in the property industry, I'm now eager to bring my skills
-                    to a new field, make a meaningful impact, and contribute to a company with fresh
-                    ideas and drive.
+                    A full-stack software developer with a focus on PHP and JavaScript enterprise
+                    applications, and an accomplished IT manager with experience creating and
+                    growing software development teams for small-medium size businesses. I am
+                    hands-on and enjoy getting involved in company operations, product development,
+                    procedures, data analysis and mentoring juniors to improve and follow good
+                    coding standards. Based in Scotland I have worked remotely for many years with
+                    teams all over the world including the USA, South Africa and India to build
+                    complex internal applications that aid company operations and increase profit
+                    margins.
                 </Typography>
             </Anim>
             <Anim anim='fadeInRight' delay={1.75}>
