@@ -1,11 +1,9 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
-import Layout from './Layout';
-
-const VCaseStudy = ({ playVideo, onPlayVideo }: Props) => {
+const VCaseStudy = () => {
     return (
-        <Layout video='ai-tools.webm' playVideo={playVideo} onPlayVideo={onPlayVideo}>
+        <Box>
             <Typography variant='h3' component='p'>
                 A.I Tools
             </Typography>
@@ -34,7 +32,7 @@ const VCaseStudy = ({ playVideo, onPlayVideo }: Props) => {
                 <Box component='li'>Custom tools for testing A.I output</Box>
                 <Box component='li'>Token and cost tracking</Box>
             </Box>
-        </Layout>
+        </Box>
     );
 };
 
@@ -45,11 +43,6 @@ const sx = {
     features: {
         margin: 0,
     },
-};
-
-type Props = {
-    playVideo: boolean;
-    onPlayVideo: () => void;
 };
 
 export default VCaseStudy;

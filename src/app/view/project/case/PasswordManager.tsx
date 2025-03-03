@@ -1,11 +1,9 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
-import Layout from './Layout';
-
-const VCaseStudy = ({ playVideo, onPlayVideo }: Props) => {
+const VCaseStudy = () => {
     return (
-        <Layout video='password-manager.webm' playVideo={playVideo} onPlayVideo={onPlayVideo}>
+        <Box>
             <Typography variant='h3' component='p'>
                 Secure Password Manager
             </Typography>
@@ -35,7 +33,7 @@ const VCaseStudy = ({ playVideo, onPlayVideo }: Props) => {
                 <Box component='li'>Google account authentication</Box>
                 <Box component='li'>Encourage security best practices</Box>
             </Box>
-        </Layout>
+        </Box>
     );
 };
 
@@ -46,11 +44,6 @@ const sx = {
     features: {
         margin: 0,
     },
-};
-
-type Props = {
-    playVideo: boolean;
-    onPlayVideo: () => void;
 };
 
 export default VCaseStudy;

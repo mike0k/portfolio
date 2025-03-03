@@ -1,11 +1,9 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
-import Layout from './Layout';
-
-const VCaseStudy = ({ playVideo, onPlayVideo }: Props) => {
+const VCaseStudy = () => {
     return (
-        <Layout video='plot-locator.webm' playVideo={playVideo} onPlayVideo={onPlayVideo}>
+        <Box>
             <Typography variant='h3' component='p'>
                 Plot Locator - Image Mapping
             </Typography>
@@ -36,7 +34,7 @@ const VCaseStudy = ({ playVideo, onPlayVideo }: Props) => {
                 <Box component='li'>Interactive frontend for public use</Box>
                 <Box component='li'>Seamless integration into 3rd party websites</Box>
             </Box>
-        </Layout>
+        </Box>
     );
 };
 
@@ -47,11 +45,6 @@ const sx = {
     features: {
         margin: 0,
     },
-};
-
-type Props = {
-    playVideo: boolean;
-    onPlayVideo: () => void;
 };
 
 export default VCaseStudy;
